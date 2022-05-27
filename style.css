@@ -1,0 +1,138 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        width: 375px;
+        height: 6715px;
+        position: relative;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 24px;
+        gap: 58px;
+        position: absolute;
+        width: 375px;
+        height: 726px;
+        left: 0px;
+        top: 92px;
+      
+    }
+
+    .nav-container {
+        /* width: 375px;
+        padding: 20px;
+        margin-bottom: 10px; */
+
+        position: absolute;
+        width: 375px;
+        height: 92px;
+        left: 0px;
+        top: 0px;
+
+    }
+
+    .bars {
+        display: flex;
+        justify-content: space-between;
+        width: 375px;
+height: 44px;
+left: calc(50% - 375px/2);
+top: 0px;
+padding: 16px 21px;
+
+
+
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        
+position: absolute;
+left: 0px;
+right: 0px;
+top: 44px;
+bottom: 0px;
+    }
+
+    .nav-bar h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .hamburger img {
+        width: 18px;
+        height: 12px;
+        left: 3px;
+        top: 6px;
+    }
+
+    .header-container{
+        background-image: url(./images/mobile-background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 375px;
+        height: 548px;
+        /* left: -50.38px; */
+        top: 88.12px; 
+        
+    }
+  
+
+    .header-content .intro{
+ 
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+text-align: center;
+color: #172B4D;
+margin-bottom: 54px;
+    }
+
+    .header-content .hello-span{
+        color: green;
+    }
+
+ .header-content .bio{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #172B4D;
+margin: 0 24px;
+    }
+
+    .social-media-icon{
+        position: absolute;
+   width: 170.17px;
+height: 20px;
+left: 102.42px;
+top: 572px;
+    }
+
+    .social-media-icon img{
+        padding: 5px;
+        font-size: 70px;
+    }
+   
+}
