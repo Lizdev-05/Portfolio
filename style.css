@@ -10,19 +10,11 @@
     height: 6715px;
   }
 
-  .bars,
   .nav-bar {
     display: flex;
     justify-content: space-between;
     color: #28352f;
-  }
-
-  .bars {
-    padding: 20px;
-  }
-
-  .nav-bar {
-    padding: 0 34px 0 24px;
+    padding: 15px 34px 0 24px;
   }
 
   .nav-bar h1 {
@@ -31,9 +23,15 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
+    text-decoration: none;
   }
 
-  .headline-container {
+  .nav-bar a {
+    text-decoration: none;
+    color: #28352f;
+  }
+
+  section {
     display: flex;
     flex-direction: column;
     width: 375px;
@@ -63,7 +61,7 @@
     text-align: center;
     color: #172b4d;
     padding: 24px;
-    margin: 42px;
+    margin: 32px;
   }
 
   .header-content .hello-span {
@@ -79,8 +77,8 @@
     line-height: 28px;
     text-align: center;
     color: #172b4d;
-    padding: 24px 0;
-    margin: 32px;
+    padding: 20px 0;
+    margin: 28px;
   }
 
   .social-media-icon {
@@ -88,11 +86,17 @@
     height: 20px;
     text-align: center;
     margin: 0 auto;
+    text-decoration: none;
   }
 
   .social-media-icon img {
     padding: 5px;
     font-size: 70px;
+  }
+
+  .card-enabler {
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   .recent-work {
@@ -106,7 +110,8 @@
     align-items: center;
     text-align: center;
     color: #172b4d;
-    margin: 0 auto;
+    margin: 20px auto;
+    margin-bottom: 50px;
   }
 
   .indicator {
@@ -114,5 +119,73 @@
     display: flex;
     align-items: center;
     text-align: center;
+  }
+
+  .card-container {
+    height: 474px;
+    width: 327px;
+    border-radius: 8px;
+    background-color: #d0d9d4;
+    position: relative;
+    border: 1px solid grey;
+    margin: 20px 0;
+  }
+
+  .card {
+    position: absolute;
+    bottom: 0;
+    height: 222px;
+    width: 325px;
+    left: 0;
+    border-radius: 8px;
+    padding: 14px;
+    border-color: #3a4a42;
+    background-color: #fff;
+  }
+
+  .tags {
+    padding: 0;
+    width: 315px;
+    height: 32px;
+    margin: 24px 0;
+  }
+
+  .tags span {
+    width: 79px;
+    height: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+    background-color: #ebf0ee;
+    padding: 8px 10px;
+    border-radius: 4px;
+  }
+
+  .btn {
+    background-color: #36b37f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    width: 122px;
+    height: 48px;
+    bottom: 8px;
+    border-radius: 4px;
+    border-color: #36b37f;
+    margin: 0 auto;
+  }
+
+  .btn a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
   }
 }
