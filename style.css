@@ -81,14 +81,21 @@
     margin: 28px;
   }
 
-  .social-media-icon {
+  .social-media-icon ul{
     width: 170.17px;
     height: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    text-decoration: none;
+   
   }
 
+  .social-media-icon li {
+    text-decoration: none;
+    list-style: none;
+  }
+   
   .social-media-icon img {
     padding: 5px;
     font-size: 70px;
