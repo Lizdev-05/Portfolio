@@ -40,4 +40,4 @@ Feel free to check the issues page.
 Give a ⭐️ if you like this project!
 
 📝 License
-This project is https://github.com/microverseinc/readme-template/blob/master/MIT.md licensed.
+This project is[ MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.

@@ -121,18 +121,24 @@
     text-align: center;
   }
 
-  .card-container {
+  .card-container-1,
+  .card-container-2,
+  .card-container-3,
+  .card-container-4 {
+    display: flex;
+    align-items: flex-end;
     height: 474px;
-    width: 327px;
+    width: 328px;
     border-radius: 8px;
     background-color: #d0d9d4;
-    position: relative;
     border: 1px solid grey;
     margin: 20px 0;
   }
 
-  .card {
-    position: absolute;
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
     bottom: 0;
     height: 222px;
     width: 325px;
@@ -187,5 +193,169 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .about-me {
+    background-image: url(./images/about-me-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 355px;
+    height: 333px;
+    position: absolute;
+    top: 3050px;
+  }
+
+  .about-me h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .about-me p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #42526e;
+  }
+
+  .about-me .resume-btn {
+    width: 159px;
+    height: 48px;
+    text-align: center;
+
+    /* padding: 15px 20px 20px 20px; */
+    background: #36b37f;
+    border-radius: 4px;
+    border-color: #36b37f;
+    margin: 0 auto;
+    padding-top: 15px;
+    margin-top: 20px;
+  }
+
+  .about-me a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+  .languages {
+    position: absolute;
+    top: 3450px;
+    background-color: #ebf0ee;
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+    width: 327px;
+    height: 352px;
+    padding: 50px 8px;
+  }
+
+  .languages h1,
+  .frameworks h1,
+  .skills h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #344563;
+  }
+
+  .lang-tags,
+  .frameworks-tags,
+  .skills-tags {
+    padding: 0;
+    width: 315px;
+    margin: 24px 0;
+  }
+
+  .lang-tags span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #36b37e;
+    background-color: #fff;
+    padding: 8px 10px;
+    border-radius: 4px;
+  }
+
+  .frameworks {
+    position: absolute;
+    top: 3850px;
+    background-color: #ebf0ee;
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+    width: 327px;
+    height: 352px;
+    padding: 40px 15px;
+  }
+
+  .frameworks-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .frameworks-tags .frame {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #36b37e;
+    background-color: #fff;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding: 10px;
+    margin: 0 10px 5px 0;
+    border-radius: 8px;
+  }
+
+  .skills {
+    position: absolute;
+    top: 4250px;
+    background-color: #ebf0ee;
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+    width: 327px;
+    height: 352px;
+    padding: 30px 15px;
+  }
+
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skills-tags a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #36b37e;
+    background-color: #fff;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding: 10px;
+    margin: 0 10px 5px 0;
+    border-radius: 8px;
+    text-decoration: none;
   }
 }
