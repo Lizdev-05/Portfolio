@@ -1,5 +1,4 @@
-# Project Name
-Portfolio
+# Portfolio
 # Description the project.
 A portfolio to demonstrate my competencies, it showcases my work to potential employers and also presents evidence of my relevant skills and abilities
 
