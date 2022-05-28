@@ -1,6 +1,4 @@
-# Project Name
-Portfolio
-# Description the project.
+# Portfolio
 A portfolio to demonstrate my competencies, it showcases my work to potential employers and also presents evidence of my relevant skills and abilities
 
 # Built With
@@ -40,4 +38,6 @@ Feel free to check the issues page.
 Give a ⭐️ if you like this project!
 
 📝 License
+
 This project is[ MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
+
