@@ -5,6 +5,10 @@
 }
 
 @media only screen and (max-width: 450px) {
+  body {
+    max-width: 375px;
+  }
+
   .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -29,10 +33,7 @@
   section {
     display: flex;
     flex-direction: column;
-    width: 375px;
-
-    /* height: 726px; */
-    left: 0;
+    max-width: 375px;
     text-align: center;
     align-items: center;
   }
@@ -42,7 +43,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 375px;
+    max-width: 375px;
     height: 648px;
   }
 
@@ -130,7 +131,7 @@
     display: flex;
     align-items: flex-end;
     height: 474px;
-    width: 328px;
+    max-width: 328px;
     border-radius: 8px;
     background-color: #d0d9d4;
     border: 1px solid grey;
@@ -144,7 +145,6 @@
     bottom: 0;
     height: 222px;
     width: 325px;
-    left: 0;
     border-radius: 8px;
     padding: 14px;
     border-color: #3a4a42;
@@ -159,8 +159,9 @@
   }
 
   .tags span {
-    width: 79px;
-    height: 16px;
+    /* float: left;
+    margin: 3px; */
+    height: 36px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -334,8 +335,6 @@
   }
 
   .skills {
-    /* position: absolute;
-    top: 4250px; */
     background-color: #ebf0ee;
     border: 1px solid #c1c7d0;
     border-radius: 8px;
@@ -363,6 +362,108 @@
     padding: 10px;
     margin: 0 10px 5px 0;
     border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .form-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+    margin-bottom: 30px;
+    width: 327px;
+  }
+
+  .form-paragraph p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+    width: 327px;
+    height: 330px;
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    width: 327px;
+    height: 48px;
+    border: 2px solid grey;
+  }
+
+  .text-area {
+    width: 327px;
+    border: 2px solid green;
+  }
+
+  input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 20px;
+  }
+
+  textarea::placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  input:hover,
+  textarea:hover {
+    outline: none !important;
+    border-color: #479ffc;
+  }
+
+  button {
+    background-color: #36b37f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #36b37f;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 18px;
+  }
+
+  button:hover {
+    border: 2px solid;
+    border-color: #479ffc;
+  }
+
+  .mail-div {
+    margin: 20px auto;
+  }
+
+  .mail-div a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #42526e;
     text-decoration: none;
   }
 }
