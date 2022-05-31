@@ -34,9 +34,6 @@
     display: flex;
     flex-direction: column;
     max-width: 375px;
-
-    /* height: 726px; */
-    left: 0;
     text-align: center;
     align-items: center;
   }
@@ -134,7 +131,7 @@
     display: flex;
     align-items: flex-end;
     height: 474px;
-    width: 328px;
+    max-width: 328px;
     border-radius: 8px;
     background-color: #d0d9d4;
     border: 1px solid grey;
@@ -148,7 +145,6 @@
     bottom: 0;
     height: 222px;
     width: 325px;
-    left: 0;
     border-radius: 8px;
     padding: 14px;
     border-color: #3a4a42;
@@ -339,8 +335,6 @@
   }
 
   .skills {
-    /* position: absolute;
-    top: 4250px; */
     background-color: #ebf0ee;
     border: 1px solid #c1c7d0;
     border-radius: 8px;
@@ -472,4 +466,96 @@
     color: #42526e;
     text-decoration: none;
   }
+
+  .detail-section {
+    width: 375px;
+    height: 882px;
+    background: #c1c7d0;
+    margin: 20px  0;
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    width: 343px;
+    height: 836px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-top: 20px;
+  }
+
+  .detail-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+    color: #172b4d;
+  }
+
+  .detail-content > .tags {
+    display: flex;
+    justify-content: left;
+  }
+
+  .detail-content > .tags span {
+    margin-right: 10px;
+  }
+
+  .detail-content > p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    text-align: justify;
+  }
+
+  .detail-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .detail-btn a {
+    background-color: #36b37f;
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 4px;
+    border: 1px solid #36b37f;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 8px;
+    display: flex;
+  }
+
+  .detail-btn img {
+    margin-left: 8px;
+  }
+
+   /* .mobile-menu {
+    margin-top: 50px;
+    height: 755px;
+    width: 375px;
+    background: #FFFFFF;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+
+   }
+
+   .exit p{
+    width: 14px;
+    height: 14px;
+   color: #93A79D;
+   font-size: 20px;
+   } */
+
 }
