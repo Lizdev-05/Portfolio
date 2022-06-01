@@ -6,7 +6,7 @@
 
 @media only screen and (max-width: 450px) {
   body {
-    max-width: 375px;
+    max-width: 100vw;
   }
 
   .nav-bar {
@@ -33,7 +33,7 @@
   section {
     display: flex;
     flex-direction: column;
-    max-width: 375px;
+    max-width: 100vw;
     text-align: center;
     align-items: center;
   }
