@@ -178,6 +178,7 @@
   </section>
   <!-- about me -->
   <section>
+    <div class="about-me-bg">
     <div class="about-me">
       <h2>About Me</h2>
       <p> I can help you build a product, feature or website Look through some of my work and experience! If you like
@@ -185,15 +186,17 @@
         don't hestiate to contact me.</p>
       <div class="resume-btn"><a href="#">Get My Resume</a></div>
     </div>
+  </div>
     <!-- languages -->
+    <div class="about-me-skils">
     <div class="languages">
       <img src="./images/icon-languages.svg" alt="">
       <h1>LANGUAGES</h1>
       <div class="lang-tags">
         <span>Javascript</span>
+        <span>Css</span>
         <span>Ruby on rails</span>
         <span>Html</span>
-        <span>Css</span>
       </div>
     </div>
 
@@ -223,22 +226,30 @@
 
       </div>
     </div>
+  </div>
   </section>
 
   <!-- Form section -->
   <section class="section-form">
+    <div class="form-part">
     <div class="form-paragraph">
       <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
     </div>
     <form action="https://formspree.io/f/mrgjjrrq" method="post">
       <input name="Name" id="name" type="text" maxlength="30" required placeholder="Full name" class="input-field">
+     <div class="desktop-input">
+      <input name="first-Name" id="first-Name" type="text" maxlength="30" required placeholder="First Name" class="input-field">
+      <input name="last-Name" id="last-Name" type="text" maxlength="30" required placeholder="Last Name"  class="input-field">
+     </div>
       <input name="Email" id="email" type="email" placeholder="Email address" required class="input-field">
       <textarea name="message" id="message" cols="30" rows="10" required maxlength="500" placeholder="Enter text here"
         class="text-area"></textarea>
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-      <button type="submit" value="submit">Get in touch</button>
+     <div class="form-button">
+        <button type="submit" value="submit">Get in touch</button>
+     </div>
     </form>
-
+  </div>
     <!-- Social Media links -->
     <div class="social-media-icon">
       <ul>
