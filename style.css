@@ -645,6 +645,7 @@ footer {
   .about-me-bg {
     position: relative;
     height: 333px;
+    margin: 50px 0;
   }
 
   .about-me-bg .about-img-1 {
