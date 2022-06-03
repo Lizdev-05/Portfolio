@@ -9,12 +9,12 @@ body {
   max-width: 100vw;
 }
 
-.nav-container {
+/* .nav-container {
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 
 .desktop-nav a {
   color: #28352f;
@@ -195,7 +195,7 @@ section {
 }
 
 .tags span {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 2px;
   height: 36px;
   font-family: 'Inter', sans-serif;
@@ -443,7 +443,8 @@ form {
   width: 100%;
   height: 330px;
   margin-bottom: 20px;
-  margin-left: 10px;
+
+  /* margin-left: 10px; */
 }
 
 .form-img-1,
