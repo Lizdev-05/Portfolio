@@ -16,6 +16,16 @@ body {
   width: 100%;
 }
 
+.desktop-nav a {
+  color: #28352f;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -136,14 +146,14 @@ section {
 }
 
 .card-containers {
-  max-width: 95vw;
+  width: 80%;
 }
 
 .card-container {
   display: flex;
   align-items: flex-end;
   height: 474px;
-  width: 95%;
+  width: 90%;
   border-radius: 8px;
   background-color: #d0d9d4;
   border: 1px solid grey;
@@ -230,17 +240,34 @@ section {
 }
 
 .about-me-bg {
-  background-image: url(./images/about-me-mobile.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
+  height: 333px;
+  width: 100vw;
+}
+
+.about-me-bg .about-img-1 {
+  display: block;
+  position: absolute;
+  right: -220px;
+  top: -230px;
+  transform: scale(0.2, 0.2);
+}
+
+.about-me-bg .about-img-2 {
+  display: block;
+  position: absolute;
+  left: -215px;
+  bottom: -80px;
+  transform: scale(0.2, 0.2);
+}
+
+.about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
   width: 355px;
-  height: 333px;
-  margin: 20px 0;
+  height: 240px;
+  margin: 0 auto;
 }
 
 .about-me h2 {
@@ -390,10 +417,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  gap: 24px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 30px;
-  width: 80%;
 }
 
 .form-paragraph p {
@@ -409,13 +436,20 @@ section {
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 0;
   gap: 24px;
-  width: 80%;
+  width: 100%;
   height: 330px;
   margin-bottom: 20px;
   margin-left: 10px;
+}
+
+.form-img-1,
+.form-img-2,
+.form-img-3 {
+  display: none;
 }
 
 #last-Name,
@@ -427,6 +461,7 @@ form {
   width: 100%;
   height: 48px;
   border: 2px solid grey;
+  padding: 10px;
 }
 
 .text-area {
@@ -480,6 +515,10 @@ button:hover {
   border-color: #479ffc;
 }
 
+footer {
+  margin-top: 50px;
+}
+
 .mail-div {
   margin: 20px auto;
 }
@@ -494,12 +533,13 @@ button:hover {
   text-decoration: none;
 }
 
-@media screen and (min-device-width: 610px) and (max-device-width: 768px) {
-  /* .card-container:nth-child(5), .card-container:nth-child(6){
+/* @media screen and (min-device-width: 610px) and (max-device-width: 768px) { */
+
+/* .card-container:nth-child(5), .card-container:nth-child(6){
       display: grid;
    } */
 
-  .card-containers {
+/* .card-containers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -508,9 +548,9 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }
-}
+} */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .nav-bar {
     display: none;
   }
@@ -542,6 +582,16 @@ button:hover {
     background-image: url(./images/Header-llustration-desktop@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 900px;
+    width: 100%;
+  }
+
+  .header-content {
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 60%;
+    margin-top: 70px;
   }
 
   .header-content .intro {
@@ -550,7 +600,7 @@ button:hover {
     height: 92px;
     text-align: center;
     padding: 24px;
-    margin: 50px 32px 10px 32px;
+    margin: 200px 32px 30px 32px;
   }
 
   .header-content .bio {
@@ -593,11 +643,24 @@ button:hover {
   }
 
   .about-me-bg {
-    background-image: url(./images/about-me-mobile.svg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1171px;
+    position: relative;
+    height: 333px;
+  }
+
+  .about-me-bg .about-img-1 {
+    display: block;
+    position: absolute;
+    right: -50px;
+    top: -200px;
+    transform: scale(0.4, 0.4);
+  }
+
+  .about-me-bg .about-img-2 {
+    display: block;
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+    transform: scale(0.4, 0.4);
   }
 
   .about-me {
@@ -606,6 +669,7 @@ button:hover {
     align-items: center;
     width: 58%;
     height: 240px;
+    padding-top: 50px;
   }
 
   .about-me-skils {
@@ -615,7 +679,7 @@ button:hover {
     padding: 4px 20px;
     gap: 10px;
     height: 360px;
-    max-width: 95vw;
+    max-width: 100%;
   }
 
   .languages,
@@ -626,22 +690,46 @@ button:hover {
   }
 
   .section-form {
-    margin-top: 100px;
+    margin-top: 80px;
+    position: relative;
+  }
+
+  .form-img-1 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+  }
+
+  .form-img-2 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    transform: scale(0.5, 0.5);
+  }
+
+  .form-img-3 {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
   }
 
   .form-paragraph {
     display: flex;
+    justify-content: baseline;
     align-items: center;
-  }
-
-  .form-paragraph p {
-    width: 463px;
+    width: 460px;
+    margin-top: 0;
+    padding-bottom: 40px;
   }
 
   .form-part {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    height: 490px;
   }
 
   #last-Name,
@@ -652,7 +740,7 @@ button:hover {
   form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 0;
     gap: 24px;
     width: 100%;
@@ -673,12 +761,70 @@ button:hover {
 
   .form-button {
     background-color: #36b37f;
-    display: inline;
+    display: inline-block;
     align-items: left;
     width: 140px;
     height: 48px;
     border-radius: 4px;
     border: 1px solid #36b37f;
     margin: 10px 0;
+    margin-right: 70%;
   }
+
+  .section-form > .social-media-icon {
+    margin-top: 40px;
+  }
+
+  .mail-div {
+    display: none;
+  }
+
+  /* Animation */
+
+  .desktop-nav li a::before,
+  .desktop-nav li a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #36b37f;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .desktop-nav li a::before {
+    top: 0;
+    transform: translateY(10px);
+  }
+
+  .desktop-nav li a::after {
+    bottom: 0;
+    transform: translateY(-10px);
+  }
+
+  .desktop-nav li a:hover::before,
+  .desktop-nav li a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* .intro {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+ @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+
+  to {
+    margin-left: 0%;
+    width: 200%;
+  }
+}
+  */
 }
