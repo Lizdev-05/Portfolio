@@ -603,7 +603,7 @@ footer {
       width: 200%;
     }
   }
-  
+
   .header-content .intro {
     font-family: 'Inter', sans-serif;
     width: 700px;
@@ -822,8 +822,6 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-
- 
 
   .flip-card {
     background-color: transparent;
