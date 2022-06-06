@@ -442,14 +442,12 @@ form {
   display: none;
 }
 
-#last-Name,
-#first-Name {
+.desktop-input {
   display: none;
 }
 
 .input-field {
   width: 100%;
-  height: 48px;
   border: 2px solid grey;
   padding: 10px;
 }
@@ -535,7 +533,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
   .about-me-skils {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -571,7 +568,7 @@ footer {
   }
 
   header {
-    background-image: url(./images/Header-llustration-desktop@2x.png);
+    background-image: url(./images/Header-llustration-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
@@ -815,7 +812,6 @@ footer {
     margin-left: 100%;
     width: 300%;
   }
-
   to {
     margin-left: 0%;
     width: 200%;
