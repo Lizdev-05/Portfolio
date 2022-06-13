@@ -13,12 +13,15 @@ navPort.addEventListener('click', () => {
   navbar.classList.toggle('active');
   fixed.classList.toggle('fixed-active');
 });
-navAbout.addEventListener('click', () => {
-  navbar.classList.toggle('active');
-  fixed.classList.toggle('fixed-active');
-});
 
 navAbout.addEventListener('click', () => {
     navbar.classList.toggle('active');
     fixed.classList.toggle('fixed-active');
-  });  
+  });
+  
+
+  navContact.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    fixed.classList.toggle('fixed-active');
+  });
+   
