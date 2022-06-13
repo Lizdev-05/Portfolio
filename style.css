@@ -5,6 +5,11 @@
   font-family: 'Inter', sans-serif;
 }
 
+.global.fixed.active{
+    position: fixed;
+    background: #f5f5f5;
+}
+
 .desktop-nav a {
   color: #28352f;
   text-decoration: none;
