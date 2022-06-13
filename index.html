@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,17 +22,18 @@
           </a>
         </div>
         <nav class="harmburger">
-          <img src="./images/Union.svg" alt="Toggle button to display hidden nav items">
+          <img src="./images/Union.svg"  id="menu-open" alt="Toggle button to display hidden nav items">
         </nav>
-      </div>
-      <div class="desktop-nav">
-        <nav>
-          <ul>
-            <li> <a href="#">Portfolio </a> </li>
-            <li> <a href="#">About</a></li>
-            <li> <a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="desktop-nav">
+          <nav class="desktop-navbar">
+            <img src="Icon.png" id="menu-close" alt="Close-btn-icon">
+            <ul>
+              <li> <a  id="nav-port" href="#">Portfolio </a> </li>
+              <li> <a id="nav-about" href="#">About</a></li>
+              <li> <a id="nav-contact" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
 
@@ -273,6 +273,8 @@
       <a href="mailto:ojesanmioyinlade.com">ojesanmioyinlade@gmail.com</a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
