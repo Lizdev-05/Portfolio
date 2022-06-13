@@ -28,9 +28,9 @@
           <nav class="desktop-navbar">
             <img src="Icon.png" id="menu-close" alt="Close-btn-icon">
             <ul>
-              <li> <a  id="nav-port" href="#">Portfolio </a> </li>
-              <li> <a id="nav-about" href="#">About</a></li>
-              <li> <a id="nav-contact" href="#">Contact</a></li>
+              <li> <a  id="nav-port" href="#Portfolio">Portfolio </a> </li>
+              <li> <a id="nav-about" href="#About">About</a></li>
+              <li> <a id="nav-contact" href="#Contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -64,7 +64,7 @@
     </section>
   </header>
   <!-- Projects -->
-  <section>
+  <section id="Portfolio">
     <div class="recent-work">
       <h2>My Recent Works</h2>
       <img src="./images/Indicator.png" alt=" An Indicator icon">
@@ -175,7 +175,7 @@
     </div>
   </section>
   <!-- about me -->
-  <section>
+  <section id="About">
     <div class="about-me-bg">
       <img src="./images/illustration-about-me-1-desktop.png" alt="" class="about-img-1">
       <img src="./images/illustration-about-me-2-desktop.png" alt="" class="about-img-2">
@@ -230,7 +230,7 @@
   </section>
 
   <!-- Form section -->
-  <section class="section-form">
+  <section class="section-form" id="Contact">
     <img src="./images/illustration-1-contact-form-desktop.png" alt="" class="form-img-1">
     <img src="./images/illustration-2-contact-form-desktop.png" alt="" class="form-img-2">
     <img src="./images/contact-form-illustratoin-3-desktop.png" alt="" class="form-img-3">
@@ -247,8 +247,8 @@
         <input name="Email" id="email" type="email" placeholder="Email address" required class="input-field">
         <textarea name="message" id="message" cols="30" rows="10" required maxlength="500" placeholder="Enter text here"
           class="text-area"></textarea>
-        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
        <div class="form-button">
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
           <button type="submit" value="submit">Get in touch</button>
        </div>
       </form>
