@@ -782,6 +782,7 @@ footer {
     display: flex;
     gap: 30px;
     flex-direction: column;
+    list-style: none;
   }
 
   .desktop-navbar img {
@@ -793,7 +794,7 @@ footer {
   }
 
   .nav-bar .desktop-nav {
-    position: absolute;
+    position: fixed;
     background-color: #fff;
     width: 100%;
     height: 100%;
@@ -802,12 +803,13 @@ footer {
   }
 
   .nav-bar .desktop-nav.active {
-    position: absolute;
-    background-color: green;
+    position: fixed;
+    background-color: #fff;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 2;
     transition: 0.5s;
 
     /* mix-blend-mode: multiply; */
