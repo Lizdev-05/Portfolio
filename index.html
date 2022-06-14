@@ -7,13 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- Navbar -->
-
+ <div class="global">
   <header>
     <div class="nav-container">
       <div class="nav-bar">
@@ -23,17 +22,18 @@
           </a>
         </div>
         <nav class="harmburger">
-          <img src="./images/Union.svg" alt="Toggle button to display hidden nav items">
+          <img src="./images/Union.svg"  id="menu-open" alt="Toggle button to display hidden nav items">
         </nav>
-      </div>
-      <div class="desktop-nav">
-        <nav>
-          <ul>
-            <li> <a href="#">Portfolio </a> </li>
-            <li> <a href="#">About</a></li>
-            <li> <a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="desktop-nav">
+          <nav class="desktop-navbar">
+            <img src="Icon.png" id="menu-close" alt="Close-btn-icon">
+            <ul>
+              <li> <a  id="nav-port" href="#Portfolio">Portfolio </a> </li>
+              <li> <a id="nav-about" href="#About">About</a></li>
+              <li> <a id="nav-contact" href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
 
@@ -64,7 +64,7 @@
     </section>
   </header>
   <!-- Projects -->
-  <section>
+  <section id="Portfolio">
     <div class="recent-work">
       <h2>My Recent Works</h2>
       <img src="./images/Indicator.png" alt=" An Indicator icon">
@@ -175,7 +175,7 @@
     </div>
   </section>
   <!-- about me -->
-  <section>
+  <section id="About">
     <div class="about-me-bg">
       <img src="./images/illustration-about-me-1-desktop.png" alt="" class="about-img-1">
       <img src="./images/illustration-about-me-2-desktop.png" alt="" class="about-img-2">
@@ -230,7 +230,7 @@
   </section>
 
   <!-- Form section -->
-  <section class="section-form">
+  <section class="section-form" id="Contact">
     <img src="./images/illustration-1-contact-form-desktop.png" alt="" class="form-img-1">
     <img src="./images/illustration-2-contact-form-desktop.png" alt="" class="form-img-2">
     <img src="./images/contact-form-illustratoin-3-desktop.png" alt="" class="form-img-3">
@@ -240,19 +240,17 @@
       </div>
       <form action="https://formspree.io/f/mrgjjrrq" method="post">
         <input name="Name" id="name" type="text" maxlength="30" required placeholder="Full name" class="input-field">
-        <div class="desktop-input">
-          <input name="first-Name" id="first-Name" type="text" maxlength="30" required placeholder="First Name"
-            class="input-field">
-          <input name="last-Name" id="last-Name" type="text" maxlength="30" required placeholder="Last Name"
-            class="input-field">
-        </div>
+       <div class="desktop-input">
+        <input name="first-Name" id="first-Name" type="text" maxlength="30" required placeholder="First Name" class="input-field">
+        <input name="last-Name" id="last-Name" type="text" maxlength="30" required placeholder="Last Name"  class="input-field">
+       </div>
         <input name="Email" id="email" type="email" placeholder="Email address" required class="input-field">
         <textarea name="message" id="message" cols="30" rows="10" required maxlength="500" placeholder="Enter text here"
           class="text-area"></textarea>
+       <div class="form-button">
         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        <div class="form-button">
           <button type="submit" value="submit">Get in touch</button>
-        </div>
+       </div>
       </form>
     </div>
   </section>
@@ -273,6 +271,8 @@
       <a href="mailto:ojesanmioyinlade.com">ojesanmioyinlade@gmail.com</a>
     </div>
   </footer>
+</div>
+  <script src="script.js"></script>
 </body>
 
 </html>
