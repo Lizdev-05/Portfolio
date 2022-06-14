@@ -516,17 +516,11 @@ footer {
   margin: 20px 0;
   margin-left: 5px;
   margin-right: 5px;
-  /* display: none; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .modal-section.active {
   /* width: 375px; */
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

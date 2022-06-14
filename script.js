@@ -10,6 +10,7 @@ const navAbout = document.getElementById('nav-about');
 const navContact = document.getElementById('nav-contact');
 const fixed = document.querySelector('.global');
 const portfolioSection = document.querySelector('.card-containers')
+let modalSection = document.querySelector('.modal-section')
 
 
 // const modal = document.querySelector('btn')
@@ -89,6 +90,7 @@ const cardCreation = (arr, i) => {
   cardContent.className = 'card-content'
   let btn = document.createElement('div')
   btn.className = 'btn'
+  btn.id = `${i}`
   let btnLink = document.createElement('a')
   let cardTitle = document.createElement('h2')
   let tags = document.createElement('div')
@@ -119,7 +121,7 @@ cardCount.forEach(x => cardCreation(CardArray, x))
 
 // modal
 
-const createModal = () => {
+const createModal = (arr, i) => {
   let modalPart = document.createElement('div')
   modalPart.className = 'modal-section'
   let modal = document.createElement('div')
@@ -152,14 +154,16 @@ const createModal = () => {
 
 
   modalClose.innerHTML = '&times'
-  modalHead.innerHTML = ' Keeping track of hundreds of components'
-  let spanTag = Array.from(Array(CardArray[0].languageTags.length).keys())
+  modalHead.innerHTML = arr[i].title
+  let spanTag = Array.from(Array(arr[i].languageTags.length).keys())
   spanTag.forEach(x => {
     modalTags.appendChild(document.createElement('span'))
     const line = modalTags.children[x]
-    line.innerHTML = CardArray[0].languageTags[x]
+    line.innerHTML = arr[i].languageTags[x]
   })
-  modalDescription.innerHTML = CardArray[0].description
+
+
+  modalDescription.innerHTML = arr[i].description
   btn1.innerHTML = 'See Live'
   btn2.innerHTML = 'See Source'
 
@@ -172,8 +176,15 @@ const createModal = () => {
   btn1.appendChild(btn1Image)
   btn2.appendChild(btn2Image)
 
+  modalClose.addEventListener('click', () => modalSection.classList.toggle('active'))
+
 }
 
-createModal();
+const cardButton = Array.from(document.querySelectorAll('.card-container .btn'))
+cardButton.forEach(i => i.addEventListener('click', () => {
+  modalSection.classList.toggle('active')
+  createModal(CardArray, i.id)
+}))
+
 
 // modal toggle
