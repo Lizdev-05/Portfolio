@@ -178,9 +178,9 @@ const createModal = (arr, i) => {
   btn2.innerHTML = 'See Source'
 
   modalSection.appendChild(modal)
-  modal.append(modalImage, modalContent, modalBtn)
-  modalImage.append(modalClose, modalImg)
-  modalContent.append(modalHead, modalTags, modalDescription)
+  modal.append(modalImage, modalContent, modalDescription, modalBtn)
+  modalImage.append(modalImg, modalClose)
+  modalContent.append(modalHead, modalTags)
   // modalFlex.append()
   modalBtn.append(btn1, btn2 )
   btn1.appendChild(btn1Image)
@@ -189,6 +189,7 @@ const createModal = (arr, i) => {
   modalClose.addEventListener('click', () => {
     modalSection.classList.toggle('active')
     deleteModal()
+    fixed.classList.remove('fixed')
   })
   
 }
@@ -197,6 +198,7 @@ const cardButton = Array.from(document.querySelectorAll('.card-container .btn'))
 cardButton.forEach(i => i.addEventListener('click', () => {
   modalSection.classList.toggle('active')
   createModal(CardArray, i.id)
+  fixed.classList.add('fixed')
 }))
 
 
@@ -205,21 +207,21 @@ const email = document.getElementById('email')
 const emailError = document.querySelector('.emailError')
 const formInput = Array.from(document.querySelectorAll('.input'))
 
-form.addEventListener('click', e => {
+form.addEventListener('submit', e => {
   if (email.value !== email.value.toLowerCase()) {
     e.preventDefault()
     emailError.innerHTML = 'email should be lower case'
-    emailError.classList.toggle('display')
-    email.classList.toggle('invalid')
+    emailError.classList.add('display')
+    email.classList.add('invalid')
   } else {
     emailError.innerHTML = ''
-    emailError.classList.toggle('display')
+    emailError.classList.remove('display')
     email.classList.remove('invalid')
   }
 })
 
 formInput.forEach(input => input.addEventListener('click', () => {
   emailError.innerHTML = ''
-  emailError.classList.toggle('display')
-  email.classList.toggle('invalid')
+  emailError.classList.remove('display')
+  email.classList.remove('invalid')
 }))
