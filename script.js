@@ -202,17 +202,24 @@ cardButton.forEach(i => i.addEventListener('click', () => {
 
 const form = document.getElementById('form')
 const email = document.getElementById('email')
-const emailError = document.getElementById('emailError')
+const emailError = document.querySelector('.emailError')
+const formInput = Array.from(document.querySelectorAll('.input'))
 
-form.addEventListener('submit', (e) => {
-  if(email.value !== email.value.toLowerCase()) {
+form.addEventListener('click', e => {
+  if (email.value !== email.value.toLowerCase()) {
     e.preventDefault()
-    emailError.innerHTML = "Email input should be lower case"
-    emailError.classList.add('display')
+    emailError.innerHTML = 'email should be lower case'
+    emailError.classList.toggle('display')
     email.classList.toggle('invalid')
   } else {
-    emailError.innerHTML = ""
-    emailError.classList.add('display')
+    emailError.innerHTML = ''
+    emailError.classList.toggle('display')
     email.classList.remove('invalid')
-  } 
+  }
 })
+
+formInput.forEach(input => input.addEventListener('click', () => {
+  emailError.innerHTML = ''
+  emailError.classList.toggle('display')
+  email.classList.toggle('invalid')
+}))
