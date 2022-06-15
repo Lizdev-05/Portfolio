@@ -149,8 +149,8 @@ const createModal = (arr, i) => {
   let modalTags = document.createElement('div')
   modalTags.className = 'tags'
   let modalDescription = document.createElement('p')
-  let modalFlex = document.createElement('div')
-  modalFlex.className = 'modal-flex'
+  // let modalFlex = document.createElement('div')
+  // modalFlex.className = 'modal-flex'
   let btn1 = document.createElement('a')
   btn1.className = 'live'
   let btn2 = document.createElement('a')
@@ -178,10 +178,10 @@ const createModal = (arr, i) => {
   btn2.innerHTML = 'See Source'
 
   modalSection.appendChild(modal)
-  modal.append(modalImage, modalFlex)
+  modal.append(modalImage, modalContent, modalBtn)
   modalImage.append(modalClose, modalImg)
   modalContent.append(modalHead, modalTags, modalDescription)
-  modalFlex.append(modalContent, modalBtn)
+  // modalFlex.append()
   modalBtn.append(btn1, btn2 )
   btn1.appendChild(btn1Image)
   btn2.appendChild(btn2Image)
