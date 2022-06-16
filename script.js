@@ -49,7 +49,21 @@ let CardArray = [{
   {
     title: 'Multi-Post Stories Gain+Glory',
     languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',  
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    modalCardImage: './images/modal-desk-pic.png'
+  },
+
+  {
+    title: ' Keeping track of hundreds of components',
+    languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    modalCardImage: './images/detail-snapshot.png'
+  },
+
+  {
+    title: ' Keeping track of hundreds of components',
+    languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
     modalCardImage: './images/modal-desk-pic.png'
   },
 
@@ -61,21 +75,7 @@ let CardArray = [{
   },
 
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-    modalCardImage: './images/modal-desk-pic.png'
-  },
-
-  {
-    title: 'Multi-Post Stories Gain+Glory',
-    languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-    modalCardImage: './images/detail-snapshot.png'
-  },
-
-  {
-    title: 'Multi-Post Stories Gain+Glory',
+    title: ' Keeping track of hundreds of components',
     languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
     modalCardImage: './images/modal-desk-pic.png'
@@ -97,7 +97,7 @@ const cardCreation = (arr, i) => {
   let cardTitle = document.createElement('h2')
   let tags = document.createElement('div')
   tags.className = 'tags'
-  
+
 
   //  Adding Html
   cardTitle.innerHTML = arr[i].title
@@ -125,8 +125,8 @@ cardCount.forEach(x => cardCreation(CardArray, x))
 
 // modal
 
-const deleteModal = () =>{
-  while(modalSection.firstChild){
+const deleteModal = () => {
+  while (modalSection.firstChild) {
     modalSection.removeChild(modalSection.firstChild)
   }
 }
@@ -182,7 +182,7 @@ const createModal = (arr, i) => {
   modalImage.append(modalImg, modalClose)
   modalContent.append(modalHead, modalTags)
   // modalFlex.append()
-  modalBtn.append(btn1, btn2 )
+  modalBtn.append(btn1, btn2)
   btn1.appendChild(btn1Image)
   btn2.appendChild(btn2Image)
 
@@ -191,7 +191,7 @@ const createModal = (arr, i) => {
     deleteModal()
     fixed.classList.remove('fixed')
   })
-  
+
 }
 
 const cardButton = Array.from(document.querySelectorAll('.card-container .btn'))

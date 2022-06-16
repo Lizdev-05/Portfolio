@@ -912,14 +912,12 @@ footer {
 
   /* modal */
   .modal-section {
-    /* width: 375px; */
     background: #c1c7d0;
     display: none;
   }
 
 
   .modal-section.active {
-    /* width: 375px; */
     position: fixed;
     top: 0;
     left: 0;
@@ -1016,6 +1014,7 @@ footer {
     order: 3;
     flex: 2;
     align-self: flex-start;
+    padding: 10px;
   }
 
   .modal-btn a {
@@ -1064,7 +1063,7 @@ footer {
 
   .modal > p {
     order: 4;
-  }
+   }
 
   /* Animation */
 
@@ -1095,6 +1094,163 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media only screen and (max-width: 920px) and (min-width: 600px){
+
+  .modal-section.active {
+      background: #c1c7d0;
+      display: none;
+    }
+  
+  
+    .modal-section.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #c1c7d0;
+      display: flex;
+    }
+  
+  
+    .modal {
+      display: flex;
+      justify-self: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 10px;
+      width: 90%;
+      text-align: center;
+      height: 667px;
+      background: #fff;
+      border: 1px solid #dfe1e6;
+      border-radius: 16px;
+      align-content: space-around;
+      gap: 10px;
+    }
+  
+    .modal-content {
+      text-align: center;
+      margin: 0 auto;
+      order: 2;
+      flex: 3;
+    }
+  
+    .modal-content h1 {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.5;
+      color: #172b4d;
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    .modal-content>.tags {
+      display: flex;
+      justify-content: left;
+      margin: 10px;
+  
+    }
+  
+    .modal-content>.tags span {
+      margin-top: 7px 5px 15px 0;
+      height: 32px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 16px;
+      color: #3a4a42;
+      background-color: #ebf0ee;
+      padding: 8px;
+    }
+  
+    .modal-content>p {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #344563;
+      text-align: left;
+      padding: 10px 20px;
+    }
+  
+    .modal-content .tags {
+      gap: 10px;
+    }
+  
+    .modal-content .tags span {
+      font-size: 12px;
+      color: #344563;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+  
+    .modal-btn {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      order: 3;
+      flex: 2;
+      align-self: flex-start;
+      padding: 10px;
+    }
+  
+    .modal-btn a {
+      background-color: #36b37f;
+      text-decoration: none;
+      border-radius: 4px;
+      border: 1px solid #36b37f;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 12px;
+      gap: 10px;
+    }
+  
+    .modal-image {
+      flex-direction: column-reverse;
+      width: 100%;
+      order: 1;
+    }
+  
+    .modal-image > img {
+      width: 300px;
+      align-self: center;
+     }
+  
+    .modal-btn img {
+      margin-left: 2px;
+      width: 20px;
+      height: 20px;
+    }
+  
+    .modal-close {
+      padding: 0 10px;
+      border-radius: 10px;
+      background: #EBECF0;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      position: static;
+      cursor: pointer;
+      align-self: flex-end;
+      color: #67798E;
+    }
+  
+    .modal > p {
+      order: 4;
+     }
 }
 
 @media only screen and (max-width: 768px) {
