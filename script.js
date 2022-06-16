@@ -225,3 +225,43 @@ formInput.forEach(input => input.addEventListener('click', () => {
   emailError.classList.remove('display')
   email.classList.remove('invalid')
 }))
+
+// Form input to localStorage
+
+const getInTouch = e => {
+  let formInput = {
+    name: document.getElementById('name').value,
+    firstName: document.getElementById('first-Name').value,
+    lastName: document.getElementById('last-Name').value,
+    email: document.getElementById('email').value,
+    textmessage: document.getElementById('message').value
+  }
+  localStorage.setItem('formInput',JSON.stringify(formInput));
+ 
+  e.preventDefault()
+}
+
+function inputDisplay() {
+  if (localStorage.getItem('formInput')){
+    let {
+      name,
+      firstName,
+      lastName,
+      email,
+      textmessage
+    } = JSON.parse(localStorage.getItem('formInput'));
+    let outputName = document.getElementById('name')
+    let outputFirstName = document.getElementById('first-Name')
+    let outputLastName = document.getElementById('last-Name')
+    let outputEmail = document.getElementById('email')
+    let outPutTextmessage = document.getElementById('message')
+    outputName.value = name
+    outputFirstName.value = firstName
+    outputLastName.value = lastName
+    outputEmail.value = email
+    outPutTextmessage.value = textmessage
+  }
+}
+
+
+inputDisplay()
