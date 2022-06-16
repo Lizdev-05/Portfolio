@@ -583,13 +583,13 @@ footer {
   color: #172b4d;
 }
 
-.modal-content > .tags {
+.modal-content>.tags {
   display: flex;
   justify-content: left;
   margin-bottom: 5px;
 }
 
-.modal-content > .tags span {
+.modal-content>.tags span {
   margin-top: 7px 5px 15px 0;
   height: 32px;
   font-family: 'Inter', sans-serif;
@@ -602,14 +602,14 @@ footer {
   padding: 8px;
 }
 
-.modal-content > p {
+.modal > p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 24px;
   color: #344563;
-  text-align: justify;
+  text-align: left;
 }
 
 .modal-btn {
@@ -641,7 +641,7 @@ footer {
   position: relative;
 }
 
-.modal-image > img {
+.modal-image>img {
   width: 95%;
   align-self: center;
 }
@@ -658,6 +658,7 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+
   .nav-bar .harmburger,
   .nav-bar .logo,
   .nav-bar #menu-close {
@@ -890,7 +891,7 @@ footer {
     margin-right: 70%;
   }
 
-  .section-form > .social-media-icon {
+  .section-form>.social-media-icon {
     margin-top: 40px;
   }
 
@@ -902,6 +903,8 @@ footer {
   .modal-section {
     background: #c1c7d0;
     display: none;
+    Width: 1440px;
+    height: 100vh;
   }
 
   .modal-section.active {
@@ -923,9 +926,11 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
-    width: 70%;
+    /* width: 70%; */
+    width: 920px;
+    height: 1083px;
     text-align: center;
-    height: 95vh;
+    /* height: 95vh; */
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
@@ -951,13 +956,13 @@ footer {
     margin-top: 10px;
   }
 
-  .modal-content > .tags {
+  .modal-content>.tags {
     display: flex;
     justify-content: left;
     margin: 10px;
   }
 
-  .modal-content > .tags span {
+  .modal-content>.tags span {
     margin-top: 7px 5px 15px 0;
     height: 32px;
     font-family: 'Inter', sans-serif;
@@ -1023,9 +1028,12 @@ footer {
     order: 1;
   }
 
-  .modal-image > img {
-    width: 55%;
-    align-self: center;
+  .modal-image>img {
+    /* width: 55%;
+    align-self: center; */
+
+    width: 872px;
+    Height: 616px
   }
 
   .modal-btn img {
@@ -1047,7 +1055,7 @@ footer {
     color: #67798e;
   }
 
-  .modal > p {
+  .modal>p {
     order: 4;
   }
 
@@ -1156,7 +1164,7 @@ footer {
     gap: 10px;
   }
 
-  .modal-image > img {
+  .modal-image>img {
     width: 60%;
     align-self: center;
   }
@@ -1174,7 +1182,7 @@ footer {
     color: #67798e;
   }
 
-  .modal > p {
+  .modal>p {
     order: 4;
   }
 }
@@ -1189,7 +1197,7 @@ footer {
     gap: 2px;
   }
 
-  .modal-image > img {
+  .modal-image>img {
     width: 45%;
   }
 }
