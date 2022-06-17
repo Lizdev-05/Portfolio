@@ -11,7 +11,7 @@ const modalSection = document.querySelector('.modal-section');
 harmburger.addEventListener('click', () => navbar.classList.toggle('active'));
 closeBar.addEventListener('click', () => navbar.classList.toggle('active'));
 
-navPort.addEventListener('toggle', () => {
+navPort.addEventListener('click', () => {
   navbar.classList.toggle('active');
   fixed.classList.toggle('fixed-active');
 });
@@ -88,20 +88,19 @@ const cardCreation = (arr, i) => {
   cardTitle.innerHTML = arr[i].title;
   btnLink.innerHTML = 'See Project';
 
+  //  Appending divs to the parent element
+  portfolioSection.appendChild(cardContainer);
+  cardContainer.appendChild(card);
+  card.appendChild(cardContent);
+  cardContent.append(cardTitle, tags, btn);
+  btn.appendChild(btnLink);
+  const tagsCount = [0, 1, 2, 3];
+  tagsCount.forEach((x) => {
+    tags.append(document.createElement('span'));
+    const span = tags.children[x];
+    span.innerHTML = arr[i].languageTags[x];
+  });
 };
-
-//  Appending divs to the parent element
-portfolioSection.appendChild(cardContainer);
-cardContainer.appendChild(card);
-card.appendChild(cardContent);
-cardContent.append(cardTitle, tags, btn);
-btn.appendChild(btnLink);
-const tagsCount = [0, 1, 2, 3];
-tagsCount.forEach((x) => {
-  tags.append(document.createElement('span'));
-  const span = tags.children[x];
-  span.innerHTML = arr[i].languageTags[x];
-});
 
 // Array for selcting each card
 
@@ -214,8 +213,9 @@ form.addEventListener('submit', () => {
     textmessage: document.getElementById('message').value,
   };
   localStorage.setItem('formInput', JSON.stringify(formInput));
+});
 
-  function inputDisplay() {
+function inputDisplay() {
   if (localStorage.getItem('formInput')) {
     const {
       name,
@@ -236,8 +236,5 @@ form.addEventListener('submit', () => {
     outPutTextmessage.value = textmessage;
   }
 }
-});
-
-
 
 inputDisplay();
