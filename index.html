@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="global">
   <!-- Navbar -->
- <div class="global">
+ <div>
   <header>
     <div class="nav-container">
       <div class="nav-bar">
@@ -69,109 +71,7 @@
       <h2>My Recent Works</h2>
       <img src="./images/Indicator.png" alt=" An Indicator icon">
     </div>
-    <div class="card-containers">
-      <div class="card-container">
-        <div class="card">
-          <div class="card-content">
-            <h2>Multi-Post Stories Gain+Glory</h2>
-            <div class="tags">
-              <span>Ruby on rails</span>
-              <span>Css</span>
-              <span>Javascript</span>
-              <span>Html</span>
-            </div>
-            <div class="btn">
-              <a href="#">See Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card-container">
-        <div class="card">
-          <div class="card-content">
-            <h2>Multi-Post Stories Gain+Glory</h2>
-            <div class="tags">
-              <span>Ruby on rails</span>
-              <span>Css</span>
-              <span>Javascript</span>
-              <span>Html</span>
-            </div>
-            <div class="btn">
-              <a href="#">See Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <div class="card">
-          <div class="card-content">
-            <h2>Multi-Post Stories Gain+Glory</h2>
-            <div class="tags">
-              <span>Ruby on rails</span>
-              <span>Css</span>
-              <span>Javascript</span>
-              <span>Html</span>
-            </div>
-            <div class="btn">
-              <a href="#">See Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <div class="card">
-          <div class="card-content">
-            <h2>Multi-Post Stories Gain+Glory</h2>
-            <div class="tags">
-              <span>Ruby on rails</span>
-              <span>Css</span>
-              <span>Javascript</span>
-              <span>Html</span>
-            </div>
-            <div class="btn">
-              <a href="#">See Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <div class="card">
-          <div class="card-content">
-            <h2>Multi-Post Stories Gain+Glory</h2>
-            <div class="tags">
-              <span>Ruby on rails</span>
-              <span>Css</span>
-              <span>Javascript</span>
-              <span>Html</span>
-            </div>
-            <div class="btn">
-              <a href="#">See Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <div class="card">
-          <div class="card-content">
-            <h2>Multi-Post Stories Gain+Glory</h2>
-            <div class="tags">
-              <span>Ruby on rails</span>
-              <span>Css</span>
-              <span>Javascript</span>
-              <span>Html</span>
-            </div>
-            <div class="btn">
-              <a href="#">See Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
+     <div class="card-containers">
     </div>
   </section>
   <!-- about me -->
@@ -238,19 +138,19 @@
       <div class="form-paragraph">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
       </div>
-      <form action="https://formspree.io/f/mrgjjrrq" method="post">
-        <input name="Name" id="name" type="text" maxlength="30" required placeholder="Full name" class="input-field">
-       <div class="desktop-input">
-        <input name="first-Name" id="first-Name" type="text" maxlength="30" required placeholder="First Name" class="input-field">
-        <input name="last-Name" id="last-Name" type="text" maxlength="30" required placeholder="Last Name"  class="input-field">
+      <form action="https://formspree.io/f/mrgjjrrq" method="post" id="form">
+        <input name="Name" id="name" type="text" maxlength="30" placeholder="Full name" class="input-field input">
+        <div class="desktop-input">
+        <input name="first-Name" id="first-Name" type="text" maxlength="30"  placeholder="First Name" class="input-field input">
+        <input name="last-Name" id="last-Name" type="text" maxlength="30"  placeholder="Last Name"  class="input-field input">
        </div>
-        <input name="Email" id="email" type="email" placeholder="Email address" required class="input-field">
+        <input name="Email" id="email" type="email" placeholder="Email address" required class="input-field input">
+        <span class="emailError"></span>
         <textarea name="message" id="message" cols="30" rows="10" required maxlength="500" placeholder="Enter text here"
-          class="text-area"></textarea>
-       <div class="form-button">
-        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-          <button type="submit" value="submit">Get in touch</button>
-       </div>
+          class="text-area input"></textarea>
+        <div class="form-button">
+            <button type="submit" value="submit">Get in touch</button>
+        </div>
       </form>
     </div>
   </section>
@@ -272,6 +172,11 @@
     </div>
   </footer>
 </div>
+
+<!-- Modal section -->
+<section class="modal-section">
+ 
+</section>
   <script src="script.js"></script>
 </body>
 
