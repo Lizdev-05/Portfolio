@@ -535,7 +535,6 @@ footer {
 }
 
 .modal-section {
-  /* width: 375px; */
   max-width: 100vw;
   height: 670px;
   background: #c1c7d0;
@@ -546,18 +545,18 @@ footer {
 }
 
 .modal-section.active {
-  /* width: 375px; */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: -5px;
-  max-width: 100vw;
+  width: 100vw;
   height: 100vh;
   background: #c1c7d0;
   margin: 0;
   padding: 12px;
   display: flex;
+  overflow: scroll;
 }
 
 .modal {
@@ -566,11 +565,10 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   padding: 10px;
-  width: 100%;
-  height: 100%;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  width: 95%;
 }
 
 .modal-content h1 {
@@ -583,13 +581,13 @@ footer {
   color: #172b4d;
 }
 
-.modal-content>.tags {
+.modal-content > .tags {
   display: flex;
   justify-content: left;
   margin-bottom: 5px;
 }
 
-.modal-content>.tags span {
+.modal-content > .tags span {
   margin-top: 7px 5px 15px 0;
   height: 32px;
   font-family: 'Inter', sans-serif;
@@ -637,12 +635,13 @@ footer {
 }
 
 .modal-image {
+  width: 100%;
   display: flex;
   position: relative;
 }
 
-.modal-image>img {
-  width: 95%;
+.modal-image > img {
+  width: 100%;
   align-self: center;
 }
 
@@ -658,7 +657,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-
   .nav-bar .harmburger,
   .nav-bar .logo,
   .nav-bar #menu-close {
@@ -891,7 +889,7 @@ footer {
     margin-right: 70%;
   }
 
-  .section-form>.social-media-icon {
+  .section-form > .social-media-icon {
     margin-top: 40px;
   }
 
@@ -903,7 +901,7 @@ footer {
   .modal-section {
     background: #c1c7d0;
     display: none;
-    Width: 1440px;
+    width: 1440px;
     height: 100vh;
   }
 
@@ -917,6 +915,7 @@ footer {
     height: 100vh;
     background: #c1c7d0;
     display: flex;
+    overflow: scroll;
   }
 
   .modal {
@@ -926,11 +925,8 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
-    /* width: 70%; */
-    width: 920px;
-    height: 1083px;
+    width: 70%;
     text-align: center;
-    /* height: 95vh; */
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
@@ -956,13 +952,13 @@ footer {
     margin-top: 10px;
   }
 
-  .modal-content>.tags {
+  .modal-content > .tags {
     display: flex;
     justify-content: left;
     margin: 10px;
   }
 
-  .modal-content>.tags span {
+  .modal-content > .tags span {
     margin-top: 7px 5px 15px 0;
     height: 32px;
     font-family: 'Inter', sans-serif;
@@ -1028,12 +1024,8 @@ footer {
     order: 1;
   }
 
-  .modal-image>img {
-    /* width: 55%;
-    align-self: center; */
-
-    width: 872px;
-    Height: 616px
+  .modal-image > img {
+    width: 90%;
   }
 
   .modal-btn img {
@@ -1055,7 +1047,7 @@ footer {
     color: #67798e;
   }
 
-  .modal>p {
+  .modal > p {
     order: 4;
   }
 
@@ -1096,95 +1088,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
   }
-
-  .modal {
-    padding: 10px;
-    width: 98%;
-    text-align: center;
-    height: 99%;
-    gap: 2;
-  }
-
-  .modal-content h1 {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.5;
-    color: #172b4d;
-    text-align: left;
-    margin-top: 10px;
-  }
-
-  .modal-content span {
-    margin-top: 7px 5px 5px 0;
-    background-color: #ebf0ee;
-    padding: 8px;
-  }
-
-  .modal p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #344563;
-    text-align: left;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-  }
-
-  .modal-content .tags span {
-    padding: 8px 12px;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 16px;
-    color: #344563;
-  }
-
-  .modal-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    order: 3;
-    flex: 2;
-    align-self: flex-start;
-    padding: 10px;
-  }
-
-  .modal-btn a {
-    background-color: #36b37f;
-    text-decoration: none;
-    border-radius: 4px;
-    border: 1px solid #36b37f;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    padding: 8px;
-    gap: 10px;
-  }
-
-  .modal-image>img {
-    width: 60%;
-    align-self: center;
-  }
-
-  .modal-close {
-    padding: 0 10px;
-    border-radius: 10px;
-    background: #ebecf0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: static;
-    cursor: pointer;
-    align-self: flex-end;
-    color: #67798e;
-  }
-
-  .modal>p {
-    order: 4;
-  }
 }
 
 @media only screen and (max-width: 1025px) and (min-width: 827px) {
@@ -1193,12 +1096,11 @@ footer {
     padding: 5px;
     width: 95%;
     text-align: center;
-    height: 95vh;
     gap: 2px;
   }
 
-  .modal-image>img {
-    width: 45%;
+  .modal-image > img {
+    width: 80%;
   }
 }
 
