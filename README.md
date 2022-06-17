@@ -1,6 +1,4 @@
-# Project Name
-Portfolio
-# Description the project.
+# Portfolio
 A portfolio to demonstrate my competencies, it showcases my work to potential employers and also presents evidence of my relevant skills and abilities
 
 # Built With
@@ -13,13 +11,28 @@ Javascript
 # Frameworks
 No framework was used.
 
+# Live Demo
+•  [Live Demo Link](https://lizdev-05.github.io/Portfolio/)
+
 # Prerequisites
-Setup
-Install
-Usage
+• A modern browser e.g [Google Chrome](https://www.googlechrome.com)
+
+• Have [Git](https://www.git-scm.com/downloads) installed
+
+• Install [Linters]( https://stylelint.io/)
+
+# Setup
+• Git clone git@github.com:Lizdev-05/Portfolio.git
+
+•  cd Portfolio/
+
+• Run "npm install" to download the require modules locally
+
+# Deployment
+• Deploy only on any web server that can host a Node.js runtime environment
 
 # Authors
-👤 Author
+👤 Ojesanmi Elizabeth Oyin
 
 
 • GitHub: [@Lizdev-05](https://github.com/Lizdev-05)
@@ -39,5 +52,14 @@ Feel free to check the issues page.
 # Show your support
 Give a ⭐️ if you like this project!
 
+# Acknowledgement
+•  Microverse
+
+•  Coding Partners
+
+• Code reviewers
+
 📝 License
+
 This project is[ MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
+
