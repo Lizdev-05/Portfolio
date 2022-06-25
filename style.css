@@ -579,15 +579,17 @@ footer {
   line-height: 1.5;
   text-align: left;
   color: #172b4d;
+  padding: 0 10px;
 }
 
 .modal-content > .tags {
   display: flex;
   justify-content: left;
   margin-bottom: 5px;
+  padding: 0 10px;
 }
 
-.modal-content > .tags span {
+.modal-content > span {
   margin-top: 7px 5px 15px 0;
   height: 32px;
   font-family: 'Inter', sans-serif;
@@ -597,7 +599,7 @@ footer {
   line-height: 16px;
   color: #3a4a42;
   background-color: #ebf0ee;
-  padding: 8px;
+  padding: 8px 10px;
 }
 
 .modal > p {
@@ -608,6 +610,7 @@ footer {
   line-height: 24px;
   color: #344563;
   text-align: left;
+  padding: 0 10px;
 }
 
 .modal-btn {
@@ -616,6 +619,7 @@ footer {
   flex-direction: row;
   width: 100%;
   align-items: left;
+  padding: 0 10px;
 }
 
 .modal-btn a {
@@ -630,7 +634,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  padding: 5%;
+  padding: 10px;
   display: flex;
 }
 
@@ -950,16 +954,16 @@ footer {
     color: #172b4d;
     text-align: left;
     margin-top: 10px;
+    padding: 0 10px;
   }
 
   .modal-content > .tags {
     display: flex;
     justify-content: left;
-    margin: 10px;
+    padding: 0 10px;
   }
 
   .modal-content > .tags span {
-    margin-top: 7px 5px 15px 0;
     height: 32px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -968,7 +972,7 @@ footer {
     line-height: 16px;
     color: #3a4a42;
     background-color: #ebf0ee;
-    padding: 8px;
+    padding: 10px;
   }
 
   .modal p {
@@ -979,18 +983,20 @@ footer {
     line-height: 1.5;
     color: #344563;
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px;
   }
 
   .modal-content .tags {
     gap: 10px;
+    padding: 0 10px;
   }
 
   .modal-content .tags span {
     font-size: 12px;
     color: #344563;
-    padding: 8px 12px;
+    padding: 10px;
     border-radius: 8px;
+    text-align: left;
   }
 
   .modal-btn {

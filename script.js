@@ -27,10 +27,12 @@ navContact.addEventListener('click', () => {
 });
 
 const CardArray = [{
-  title: 'Multi-Post Stories Gain+Glory',
+  title: 'Women In Politics Conference',
   languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  modalCardImage: './images/detail-snapshot.png',
+  description: 'Women in political leadership make a major contribution to the transformation our world needs. But, we need more women in power and more power to women so that more can play this transformational role',
+  modalCardImage: './images/summit.png',
+  live: 'https://lizdev-05.github.io/Women-conference/',
+  source: 'https://github.com/Lizdev-05/Portfolio',
 },
 
 {
@@ -38,6 +40,8 @@ const CardArray = [{
   languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
   modalCardImage: './images/modal-desk-pic.png',
+  live: '#',
+  source: '#',
 },
 
 {
@@ -45,6 +49,8 @@ const CardArray = [{
   languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
   modalCardImage: './images/detail-snapshot.png',
+  live: '#',
+  source: '#',
 },
 
 {
@@ -52,6 +58,8 @@ const CardArray = [{
   languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
   modalCardImage: './images/modal-desk-pic.png',
+  live: '#',
+  source: '#',
 },
 
 {
@@ -59,6 +67,8 @@ const CardArray = [{
   languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
   modalCardImage: './images/detail-snapshot.png',
+  live: '#',
+  source: '#',
 },
 
 {
@@ -66,9 +76,11 @@ const CardArray = [{
   languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
   modalCardImage: './images/modal-desk-pic.png',
+  live: '#',
+  source: '#',
 },
 ];
-// Crearing divs and classses
+// Creating divs and classses for card
 const cardCreation = (arr, i) => {
   const cardContainer = document.createElement('div');
   cardContainer.className = 'card-container';
@@ -135,8 +147,10 @@ const createModal = (arr, i) => {
   const modalDescription = document.createElement('p');
   const btn1 = document.createElement('a');
   btn1.className = 'live';
+  btn1.href = arr[i].live;
   const btn2 = document.createElement('a');
   btn2.className = 'source';
+  btn2.href = arr[i].source;
   const btn1Image = document.createElement('img');
   btn1Image.src = './images/see-live-icon.svg';
   const btn2Image = document.createElement('img');
