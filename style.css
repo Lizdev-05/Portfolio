@@ -299,7 +299,7 @@ section {
   width: 90%;
   height: 355px;
   padding: 3.1em 0.2em;
-  margin:  1.5em 0;
+  margin: 1.5em 0;
   margin-left: 1em;
 }
 
@@ -347,7 +347,7 @@ section {
   width: 90%;
   height: 355px;
   padding: 2em 1em;
-  margin:  1.5em 0;
+  margin: 1.5em 0;
   margin-left: 1em;
 }
 
@@ -372,7 +372,7 @@ section {
   width: 90%;
   height: 355px;
   padding: 1.8em 1em;
-  margin:  1.5em 0;
+  margin: 1.5em 0;
   margin-left: 1em;
 }
 
@@ -571,7 +571,6 @@ footer {
   border: 1px solid #dfe1e6;
   border-radius: 1em;
   width: 95%;
-
 }
 
 .modal-content h1 {
@@ -610,7 +609,6 @@ footer {
   line-height: 1.4;
   color: #344563;
   text-align: left;
- 
 }
 
 .modal-btn {
