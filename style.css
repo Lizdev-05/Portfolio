@@ -13,7 +13,7 @@
   color: #28352f;
   text-decoration: none;
   margin: 0 10px;
-  padding: 10px;
+  padding: 1em;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -24,15 +24,15 @@
   justify-content: space-between;
   color: #28352f;
   color: #fff;
-  padding: 15px 24px 0 24px;
+  padding: 1em 1.5em 0 1.5em;
 }
 
 .nav-bar h1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.2em;
+  line-height: 1.6em;
   text-decoration: none;
 }
 
@@ -57,12 +57,12 @@ section {
 .header-content .intro {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5em;
+  line-height: 1.3em;
   text-align: center;
   color: #172b4d;
-  padding: 24px;
-  margin-top: 32px;
+  padding: 1em;
+  margin-top: 1.5em;
 }
 
 .header-content .hello-span {
@@ -73,19 +73,19 @@ section {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 1.2em;
+  line-height: 1.5;
   text-align: center;
   color: #172b4d;
-  padding: 0 15px;
-  margin-bottom: 25px;
+  padding: 0 0.9em;
+  margin-bottom: 1.5em;
 }
 
 .social-media-icon ul {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 1.2em;
 }
 
 .social-media-icon li {
@@ -94,12 +94,12 @@ section {
 }
 
 .social-media-icon img {
-  padding: 5px;
-  font-size: 70px;
+  padding: 0.2em;
+  font-size: 4em;
 }
 
 .card-enabler {
-  margin: 10px 0;
+  margin: 0.5em 0;
   text-align: center;
 }
 
@@ -107,17 +107,17 @@ section {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 52px;
+  font-size: 1.9em;
+  line-height: 1.5;
   align-items: center;
   text-align: center;
   color: #172b4d;
-  margin: 20px auto;
-  margin-bottom: 20px;
+  margin: 1.2 auto;
+  margin-bottom: 1.3em;
 }
 
 .indicator {
-  margin: 20px auto;
+  margin: 1.2em auto;
   display: flex;
   align-items: center;
   text-align: center;
@@ -132,25 +132,25 @@ section {
   align-items: flex-end;
   height: 474px;
   width: 90%;
-  border-radius: 8px;
+  border-radius: 0.5em;
   background-color: #d0d9d4;
   border: 1px solid grey;
-  margin: 20px 0;
-  margin-left: 15px;
+  margin: 1.2em 0;
+  margin-left: 1em;
 }
 
 .card {
   bottom: 0;
   height: 235px;
   width: 100%;
-  border-radius: 8px;
-  padding: 20px 10px 0 10px;
+  border-radius: 0.5em;
+  padding: 1.2em 0.7em 0 0.7em;
   border-color: #3a4a42;
   background-color: #fff;
 }
 
 .card-content {
-  margin: 10px 0;
+  margin: 0.8em 0;
 }
 
 .tags {
@@ -165,8 +165,8 @@ section {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.2em;
+  line-height: 2em;
   display: flex;
   align-items: center;
   text-align: center;
@@ -174,17 +174,17 @@ section {
 }
 
 .tags span {
-  margin-top: 7px;
-  margin-left: 2px;
+  margin-top: 0.4em;
+  margin-left: 0.2em;
   height: 32px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.8em;
+  line-height: 1em;
   color: #3a4a42;
   background-color: #ebf0ee;
-  padding: 8px 10px;
+  padding: 0.7em;
   border-radius: 4px;
 }
 
@@ -198,12 +198,12 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
+  padding: 0.8em;
   width: 122px;
   height: 45px;
   border-radius: 4px;
   border-color: #36b37f;
-  margin: 10px auto 0 auto;
+  margin: 0.7em auto 0 auto;
   cursor: pointer;
 }
 
@@ -213,8 +213,9 @@ section {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0 auto;
 }
 
 .about-me-bg {
@@ -226,16 +227,16 @@ section {
 .about-me-bg .about-img-1 {
   display: block;
   position: absolute;
-  right: -190px;
-  top: -240px;
+  right: -11.8em;
+  top: -15em;
   transform: scale(0.15, 0.15);
 }
 
 .about-me-bg .about-img-2 {
   display: block;
   position: absolute;
-  left: -215px;
-  bottom: -80px;
+  left: -13em;
+  bottom: -5em;
   transform: scale(0.2, 0.2);
 }
 
@@ -250,8 +251,8 @@ section {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2em;
+  line-height: 2;
   text-align: center;
   color: #172b4d;
 }
@@ -260,10 +261,11 @@ section {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.3em;
+  line-height: 1.5;
   text-align: center;
   color: #42526e;
+  padding: 0.4em;
 }
 
 .about-me .resume-btn {
@@ -274,8 +276,8 @@ section {
   border-radius: 4px;
   border-color: #36b37f;
   margin: 0 auto;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 0.8em;
+  margin-top: 1em;
 }
 
 .about-me a {
@@ -296,9 +298,9 @@ section {
   border-radius: 8px;
   width: 90%;
   height: 355px;
-  padding: 50px 8px;
-  margin: 20px 0;
-  margin-left: 15px;
+  padding: 3.1em 0.2em;
+  margin:  1.5em 0;
+  margin-left: 1em;
 }
 
 .languages h1,
@@ -307,7 +309,7 @@ section {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 1.5;
   text-align: center;
   color: #344563;
@@ -321,21 +323,21 @@ section {
   justify-content: center;
   padding: 0;
   width: 100%;
-  margin: 24px 0;
+  margin: 1.2em 0;
 }
 
 .lang-tags span {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.8em;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #36b37e;
   background-color: #fff;
-  padding: 8px 10px;
+  padding: 0.5em 0.8em;
   border-radius: 4px;
-  margin: 0 10px 5px 0;
+  margin: 0 0.3em 0.2em 0;
 }
 
 .frameworks {
@@ -344,22 +346,22 @@ section {
   border-radius: 8px;
   width: 90%;
   height: 355px;
-  padding: 35px 15px;
-  margin: 20px 0;
-  margin-left: 15px;
+  padding: 2em 1em;
+  margin:  1.5em 0;
+  margin-left: 1em;
 }
 
 .frameworks-tags .frame {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.8em;
   color: #36b37e;
   background-color: #fff;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  padding: 10px;
-  margin: 0 10px 5px 0;
+  padding: 0.8em;
+  margin: 0 0.8em 0.2em 0;
   border-radius: 8px;
 }
 
@@ -369,22 +371,22 @@ section {
   border-radius: 8px;
   width: 90%;
   height: 355px;
-  padding: 30px 15px;
-  margin: 20px 0;
-  margin-left: 15px;
+  padding: 1.8em 1em;
+  margin:  1.5em 0;
+  margin-left: 1em;
 }
 
 .skills-tags a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.8em;
   color: #36b37e;
   background-color: #fff;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  padding: 10px;
-  margin: 0 10px 5px 0;
+  padding: 0.8em;
+  margin: 0 0.8em 0.2em 0;
   border-radius: 8px;
   text-decoration: none;
 }
@@ -395,15 +397,15 @@ section {
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 30px;
-  padding: 0 25px;
+  margin-bottom: 1.8em;
+  padding: 0 1.4em;
 }
 
 .form-paragraph p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.8em;
   line-height: 1.5;
   text-align: center;
   color: #172b4d;
@@ -414,11 +416,11 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 1.3em;
   width: 100%;
   height: 330px;
-  margin-bottom: 20px;
-  padding: 0 15px;
+  margin-bottom: 1.2em;
+  padding: 0 1em;
 }
 
 .form-img-1,
@@ -446,15 +448,16 @@ input::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 1.5;
-  padding: 20px;
+  padding: 1.2em;
 }
 
 textarea::placeholder {
   color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.1em;
+  padding: 1.2em;
 }
 
 input:hover,
@@ -478,9 +481,9 @@ button {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1em;
   line-height: 1.5;
-  padding: 18px;
+  padding: 1.1em;
 }
 
 button:hover {
@@ -500,14 +503,14 @@ button:hover {
   position: absolute;
   opacity: 0;
   transition: 1s;
-  padding: 2px 10px;
+  padding: 0.1em 0.85em;
 }
 
 .emailError.display {
   opacity: 1;
   background-color: white;
   color: red;
-  top: 110px;
+  top: 6.85em;
   border-radius: 5px;
   z-index: 2;
   border: 1px solid black;
@@ -515,11 +518,11 @@ button:hover {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 3.12em;
 }
 
 .mail-div {
-  margin: 20px auto;
+  margin: 1.3em auto;
   display: flex;
   justify-content: center;
 }
@@ -527,7 +530,7 @@ footer {
 .mail-div a {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.3em;
   line-height: 1.5;
   text-align: center;
   color: #42526e;
@@ -538,9 +541,7 @@ footer {
   max-width: 100vw;
   height: 670px;
   background: #c1c7d0;
-  margin: 20px 0;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 1.4em 0.4em;
   display: none;
 }
 
@@ -549,12 +550,12 @@ footer {
   top: 0;
   left: 0;
   right: 0;
-  bottom: -5px;
+  bottom: -0.3em;
   width: 100vw;
   height: 100vh;
   background: #c1c7d0;
   margin: 0;
-  padding: 12px;
+  padding: 0.5em;
   display: flex;
   overflow: scroll;
 }
@@ -564,77 +565,74 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 1em;
+  margin: 0.5em 0;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
+  border-radius: 1em;
   width: 95%;
+
 }
 
 .modal-content h1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.5em;
   line-height: 1.5;
   text-align: left;
   color: #172b4d;
-  padding: 0 10px;
 }
 
 .modal-content > .tags {
   display: flex;
   justify-content: left;
-  margin-bottom: 5px;
-  padding: 0 10px;
+  margin-bottom: 0.3em;
 }
 
 .modal-content > span {
-  margin-top: 7px 5px 15px 0;
   height: 32px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 11px;
-  line-height: 16px;
+  font-size: 0.8em;
+  line-height: 1;
   color: #3a4a42;
   background-color: #ebf0ee;
-  padding: 8px 10px;
+  padding: 0.7em 0;
 }
 
 .modal > p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.4;
   color: #344563;
   text-align: left;
-  padding: 0 10px;
+ 
 }
 
 .modal-btn {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   width: 100%;
-  align-items: left;
-  padding: 0 10px;
 }
 
 .modal-btn a {
   background-color: #36b37f;
   text-decoration: none;
-  margin: 10px 5px;
+  margin: 0.7em 0;
   border-radius: 4px;
   border: 1px solid #36b37f;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
-  padding: 10px;
+  padding: 0.5em;
   display: flex;
 }
 
@@ -691,7 +689,7 @@ footer {
   .desktop-nav li {
     text-decoration: none;
     list-style: none;
-    margin: 10px;
+    margin: 0.5em;
     color: #28352f;
   }
 
@@ -708,7 +706,7 @@ footer {
     text-align: center;
     height: 300px;
     width: 60%;
-    margin-top: 50px;
+    margin-top: 2em;
   }
 
   .header-content .intro {
@@ -716,8 +714,8 @@ footer {
     width: 700px;
     height: 92px;
     text-align: center;
-    padding: 24px;
-    margin: 100px 32px 30px 32px;
+    padding: 1em;
+    margin: 2em 1.5em 1.5em 1em;
   }
 
   .header-content .bio {
@@ -725,12 +723,12 @@ footer {
     width: 700px;
     height: 92px;
     text-align: center;
-    padding: 20px 0;
-    margin: 28px;
+    padding: 1.2em 0;
+    margin: 2em 1.5em 1em 2.5em;
   }
 
   .card-enabler {
-    margin-top: 50px;
+    margin-top: 3.25em;
     text-align: center;
   }
 
@@ -746,7 +744,7 @@ footer {
     border-radius: 8px;
     background-color: #d0d9d4;
     border: 1px solid grey;
-    margin: 20px 0;
+    margin: 1.4em 0;
   }
 
   .card-container:nth-child(5),
@@ -763,23 +761,23 @@ footer {
   .about-me-bg {
     position: relative;
     height: 333px;
-    margin: 10px 0 50px 0;
+    margin: 0.8em 0 3em 0;
   }
 
   .about-me-bg .about-img-1 {
     display: block;
     position: absolute;
-    right: -29px;
-    top: -56px;
+    right: -1.8em;
+    top: -3.5em;
     transform: scale(0.4, 0.4);
   }
 
   .about-me-bg .about-img-2 {
     display: block;
     position: absolute;
-    left: -100px;
+    left: -7em;
     bottom: 0;
-    top: 164px;
+    top: 10em;
     transform: scale(0.4, 0.4);
   }
 
@@ -789,29 +787,29 @@ footer {
     align-items: center;
     width: 53%;
     height: 240px;
-    margin-top: 152px;
+    margin-top: 9.5em;
   }
 
   .about-me-skils {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 4px 20px;
+    padding: 0.2em 1.2em;
     gap: 10px;
     height: 360px;
     max-width: 100%;
-    margin-top: 60px;
+    margin-top: 3.7em;
   }
 
   .languages,
   .frameworks,
   .skills {
     width: 90%;
-    padding: 10px 20px;
+    padding: 0.6em 1.2em;
   }
 
   .section-form {
-    margin-top: 80px;
+    margin-top: 5em;
     position: relative;
   }
 
@@ -819,7 +817,7 @@ footer {
     display: block;
     position: absolute;
     bottom: 0;
-    left: -10px;
+    left: -0.8em;
   }
 
   .form-img-2 {
@@ -833,8 +831,8 @@ footer {
   .form-img-3 {
     display: block;
     position: absolute;
-    right: -50px;
-    bottom: -120px;
+    right: -3.1em;
+    bottom: -7.5em;
     transform: scale(0.5, 0.5);
   }
 
@@ -844,7 +842,7 @@ footer {
     align-items: center;
     width: 460px;
     margin-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 2.5em;
   }
 
   .form-part {
@@ -867,8 +865,8 @@ footer {
     gap: 24px;
     width: 100%;
     height: 330px;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-bottom: 1.4em;
+    margin-left: 0.8em;
   }
 
   .desktop-input {
@@ -889,12 +887,12 @@ footer {
     height: 48px;
     border-radius: 4px;
     border: 1px solid #36b37f;
-    margin: 10px 0;
+    margin: 0.8em 0;
     margin-right: 70%;
   }
 
   .section-form > .social-media-icon {
-    margin-top: 40px;
+    margin-top: 2.5em;
   }
 
   .mail-div {
