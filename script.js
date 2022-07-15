@@ -28,20 +28,20 @@ navContact.addEventListener('click', () => {
 
 const CardArray = [{
   title: 'Women In Politics Conference',
-  languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
+  languageTags: ['Javascript', 'Css', 'Linters', 'Html'],
   description: 'Women in political leadership make a major contribution to the transformation our world needs. But, we need more women in power and more power to women so that more can play this transformational role',
-  modalCardImage: './images/summit.png',
+  modalCardImage: './images/summit-short.png',
   live: 'https://lizdev-05.github.io/Women-conference/',
   source: 'https://github.com/Lizdev-05/Portfolio',
 },
 
 {
-  title: ' Keeping track of components',
-  languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  modalCardImage: './images/modal-desk-pic.png',
-  live: '#',
-  source: '#',
+  title: ' Awesome Books',
+  languageTags: ['Javascript', 'Css', 'Linters', 'Html'],
+  description: 'This project is focused on building is a simple website that displays a list of books that users have added.It allows you to add and remove books from that list also. The goal of this project is to build a simple multipage page responsive book website.',
+  modalCardImage: './images/awesome-books.png',
+  live: 'https://lizdev-05.github.io/Awesome-Books/',
+  source: 'https://github.com/Lizdev-05/Awesome-Books.git',
 },
 
 {
