@@ -5,6 +5,12 @@
   font-family: 'Inter', sans-serif;
 }
 
+/* body {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+} */
+
 .global.fixed {
   overflow: hidden;
 }
@@ -51,7 +57,16 @@ section {
 .headline-intro {
   background-image: url(./images/mobile-background.png);
   background-repeat: no-repeat;
-  background-size: cover;
+
+  /* background-size: cover; */
+  background-size: calc(100%);
+}
+
+.header-content {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
 }
 
 .header-content .intro {
@@ -61,12 +76,17 @@ section {
   line-height: 1.3em;
   text-align: center;
   color: #172b4d;
-  padding: 1em;
+  padding: 0 1em;
   margin-top: 1.5em;
 }
 
 .header-content .hello-span {
   color: green;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.3em;
+  text-align: center;
 }
 
 .header-content .bio {
@@ -694,35 +714,41 @@ footer {
   header {
     background-image: url(./images/Header-llustration-desktop.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 900px;
+    background-size: calc(100%);
     width: 100%;
   }
 
   .header-content {
     align-items: center;
     text-align: center;
-    height: 300px;
-    width: 60%;
-    margin-top: 2em;
+    width: 100%;
+    margin-top: 6%;
   }
 
   .header-content .intro {
     font-family: 'Inter', sans-serif;
-    width: 700px;
-    height: 92px;
     text-align: center;
-    padding: 1em;
-    margin: 2em 1.5em 1.5em 1em;
+    line-height: 0.5em;
+    padding: 0.5em 1em;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .header-content .hello-span {
+    color: green;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    text-align: center;
   }
 
   .header-content .bio {
     font-family: 'Inter', sans-serif;
-    width: 700px;
-    height: 92px;
+    width: 50%;
     text-align: center;
-    padding: 1.2em 0;
-    margin: 2em 1.5em 1em 2.5em;
+    padding: 0.5em 1em 1em 1em;
+    margin: 0 auto;
   }
 
   .card-enabler {
@@ -1082,9 +1108,43 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+
+  .header-content .hello-span,
+  .desktop-nav {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    100% {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 825px) and (min-width: 600px) {
+  .header-content {
+    width: 100%;
+  }
+
+  .header-content .intro {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 1em 0.5em 1em;
+  }
+
+  .header-content .bio {
+    width: 80%;
+    padding: 0.5em 1em 1em 1em;
+    margin: 0 auto;
+  }
+
   .card-containers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1093,6 +1153,21 @@ footer {
 }
 
 @media only screen and (max-width: 1025px) and (min-width: 827px) {
+  .header-content {
+    width: 100%;
+  }
+
+  .header-content .intro {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em 1em 0.5em 1em;
+  }
+
+  .header-content .bio {
+    width: 70%;
+    padding: 0.5em 1em 1em 1em;
+  }
+
   .modal {
     margin-top: 3px;
     padding: 5px;

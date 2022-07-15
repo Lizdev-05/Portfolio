@@ -36,7 +36,7 @@ const CardArray = [{
 },
 
 {
-  title: ' Awesome Books',
+  title: 'The Awesome Book Library',
   languageTags: ['Javascript', 'Css', 'Linters', 'Html'],
   description: 'This project is focused on building is a simple website that displays a list of books that users have added.It allows you to add and remove books from that list also. The goal of this project is to build a simple multipage page responsive book website.',
   modalCardImage: './images/awesome-books.png',
