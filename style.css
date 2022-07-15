@@ -57,7 +57,7 @@ section {
 .header-content {
   align-items: center;
   text-align: center;
-  width: 375px;
+  width: 100vw;
   margin-top: 2em;
 }
 
@@ -129,6 +129,7 @@ section {
   color: #172b4d;
   margin: 1.2 auto;
   margin-bottom: 1.3em;
+  padding: 0.3em;
 }
 
 .indicator {
