@@ -5,12 +5,6 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* body {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-} */
-
 .global.fixed {
   overflow: hidden;
 }
@@ -57,8 +51,6 @@ section {
 .headline-intro {
   background-image: url(./images/mobile-background.png);
   background-repeat: no-repeat;
-
-  /* background-size: cover; */
   background-size: calc(100%);
 }
 
@@ -77,6 +69,7 @@ section {
   text-align: center;
   color: #172b4d;
   padding: 0 1em;
+  width: 100%;
   margin-top: 1.5em;
 }
 
@@ -87,6 +80,7 @@ section {
   font-size: 2.5em;
   line-height: 1.3em;
   text-align: center;
+  width: 100%;
 }
 
 .header-content .bio {
@@ -98,6 +92,7 @@ section {
   text-align: center;
   color: #172b4d;
   padding: 0 0.9em;
+  width: 100%;
   margin-bottom: 1.5em;
 }
 
