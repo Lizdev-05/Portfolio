@@ -55,11 +55,11 @@ const CardArray = [{
 
 {
   title: ' Keeping track of components',
-  languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  modalCardImage: './images/modal-desk-pic.png',
-  live: '#',
-  source: '#',
+  languageTags: ['API', 'Css', 'Javascript', 'Html'],
+  description: 'This is the second Microverse capstone project meant to summarize all the content learned through module 2. The objective was to mimic the appearance of a dynamic web application, in a similar way a web developer would receive the requirements as if it were in a job.',
+  modalCardImage: './images/meal-screnshot.png',
+  live: 'https://lizdev-05.github.io/capstone-project/',
+  source: 'https://github.com/Lizdev-05/capstone-project.git',
 },
 
 {
