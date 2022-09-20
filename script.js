@@ -56,7 +56,7 @@ const CardArray = [{
 {
   title: ' Keeping track of components',
   languageTags: ['API', 'Css', 'Javascript', 'Html'],
-  description: 'This is the second Microverse capstone project meant to summarize all the content learned through module 2. The objective was to mimic the appearance of a dynamic web application, in a similar way a web developer would receive the requirements as if it were in a job.',
+  description: 'The Meal DB web application displays a list of meals that were provided by an external API. The users can like a meal, leave some comments or make a reservation, in these cases an involvement API was used.',
   modalCardImage: './images/meal-screnshot.png',
   live: 'https://lizdev-05.github.io/capstone-project/',
   source: 'https://github.com/Lizdev-05/capstone-project.git',
@@ -64,20 +64,20 @@ const CardArray = [{
 
 {
   title: 'Multi-Post Stories Gain+Glory',
-  languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+  languageTags: ['React Js', 'Redux', 'Css', 'Javascript', 'API'],
+  description: 'Stock metrics is a web(mobile-focused) app for checking the companies listed on the stock exchange and see their live metrics. Its data is consumed from the Financial modelling API',
   modalCardImage: './images/detail-snapshot.png',
-  live: '#',
-  source: '#',
+  live: 'https://lizdev-stock-metric.netlify.app/',
+  source: 'https://github.com/Lizdev-05/stock-market.git',
 },
 
 {
   title: ' Keeping track of components',
-  languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  modalCardImage: './images/modal-desk-pic.png',
-  live: '#',
-  source: '#',
+  languageTags: ['Gitflow', 'Css', 'Javascript', 'Html'],
+  description: 'The Bookstore is a website where the user can display a list of books, add a book by providing a title, an author, and selecting from the categories, and remove a selected book.',
+  modalCardImage: './images/bookstore.PNG',
+  live: 'https://lizdev-book-store.netlify.app/',
+  source: 'https://github.com/Lizdev-05/book-store.git',
 },
 ];
 // Creating divs and classses for card
