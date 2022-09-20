@@ -39,18 +39,18 @@ const CardArray = [{
   title: 'The Awesome Book Library',
   languageTags: ['Javascript', 'Css', 'Linters', 'Html'],
   description: 'This project is focused on building is a simple website that displays a list of books that users have added.It allows you to add and remove books from that list also. The goal of this project is to build a simple multipage page responsive book website.',
-  modalCardImage: './images/awesome-books.png',
+  modalCardImage: './images/estate.png',
   live: 'https://lizdev-05.github.io/Awesome-Books/',
   source: 'https://github.com/Lizdev-05/Awesome-Books.git',
 },
 
 {
-  title: 'Multi-Post Stories Gain+Glory',
-  languageTags: ['Ruby on rails', 'Css', 'Javascript', 'Html'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  modalCardImage: './images/detail-snapshot.png',
-  live: '#',
-  source: '#',
+  title: 'The Awesome Real Estate',
+  languageTags: ['React Js', 'Javascript', 'Css', 'Linters', 'GitFlow'],
+  description: 'The Awesome estate web application displays a list of apartments that were provided by local data. The users can check out the featured and recent apartments. Also, the user can click the house to get the details of the selected house.',
+  modalCardImage: './images/awesome-books.png',
+  live: 'https://lizdev-awesome-estate.netlify.app/',
+  source: 'https://github.com/Lizdev-05/awesome-estate.git',
 },
 
 {
