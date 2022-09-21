@@ -27,12 +27,38 @@ navContact.addEventListener('click', () => {
 });
 
 const CardArray = [{
-  title: 'Women In Politics Conference',
-  languageTags: ['Javascript', 'Css', 'Linters', 'Html'],
-  description: 'Women in political leadership make a major contribution to the transformation our world needs. But, we need more women in power and more power to women so that more can play this transformational role',
-  modalCardImage: './images/summit2.webp',
-  live: 'https://lizdev-05.github.io/Women-conference/',
-  source: 'https://github.com/Lizdev-05/Portfolio',
+    title: 'The Awesome Real Estate',
+    languageTags: ['React Js', 'Javascript', 'Css', 'Linters', 'GitFlow'],
+    description: 'The Awesome estate web application displays a list of apartments that were provided by local data. The users can check out the featured and recent apartments. Also, the user can click the house to get the details of the selected house.',
+    modalCardImage: 'images/estate.webp',
+    live: 'https://lizdev-awesome-estate.netlify.app/',
+    source: 'https://github.com/Lizdev-05/awesome-estate.git',
+  },
+  
+  {
+    title: ' S&L Sensation',
+    languageTags: ['API', 'Css', 'Javascript', 'Html'],
+    description: 'The Meal DB web application displays a list of meals that were provided by an external API. The users can like a meal, leave some comments or make a reservation, in these cases an involvement API was used.',
+    modalCardImage: './images/meal.webp',
+    live: 'https://lizdev-05.github.io/capstone-project/',
+    source: 'https://github.com/Lizdev-05/capstone-project.git',
+  },
+  
+  {
+    title: 'Realtime Stock Metric',
+    languageTags: ['React Js', 'Redux', 'Css', 'Javascript', 'API'],
+    description: 'Stock metrics is a web(mobile-focused) app for checking the companies listed on the stock exchange and see their live metrics. Its data is consumed from the Financial modelling API',
+    modalCardImage: './images/stock.webp',
+    live: 'https://lizdev-stock-metric.netlify.app/',
+    source: 'https://github.com/Lizdev-05/stock-market.git',
+  },
+  {
+  title: 'The Todos List',
+  languageTags: ['React', 'Javascript', 'Css', 'Linters'],
+  description: 'Todo List Web app. This React app allows users to manage and organize their work and tasks effectively. The users can delete, update, and add new assignments to enhance task management.',
+  modalCardImage: './images/todo2.webp',
+  live: 'https://lizdev-todo-lists.netlify.app/',
+  source: 'https://github.com/Lizdev-05/react-to-do-lists.git',
 },
 
 {
@@ -42,33 +68,6 @@ const CardArray = [{
   modalCardImage: './images/awesomebook.webp',
   live: 'https://lizdev-05.github.io/Awesome-Books/',
   source: 'https://github.com/Lizdev-05/Awesome-Books.git',
-},
-
-{
-  title: 'The Awesome Real Estate',
-  languageTags: ['React Js', 'Javascript', 'Css', 'Linters', 'GitFlow'],
-  description: 'The Awesome estate web application displays a list of apartments that were provided by local data. The users can check out the featured and recent apartments. Also, the user can click the house to get the details of the selected house.',
-  modalCardImage: 'images/estate.webp',
-  live: 'https://lizdev-awesome-estate.netlify.app/',
-  source: 'https://github.com/Lizdev-05/awesome-estate.git',
-},
-
-{
-  title: ' S&L Sensation',
-  languageTags: ['API', 'Css', 'Javascript', 'Html'],
-  description: 'The Meal DB web application displays a list of meals that were provided by an external API. The users can like a meal, leave some comments or make a reservation, in these cases an involvement API was used.',
-  modalCardImage: './images/meal.webp',
-  live: 'https://lizdev-05.github.io/capstone-project/',
-  source: 'https://github.com/Lizdev-05/capstone-project.git',
-},
-
-{
-  title: 'Realtime Stock Metric',
-  languageTags: ['React Js', 'Redux', 'Css', 'Javascript', 'API'],
-  description: 'Stock metrics is a web(mobile-focused) app for checking the companies listed on the stock exchange and see their live metrics. Its data is consumed from the Financial modelling API',
-  modalCardImage: './images/stock.webp',
-  live: 'https://lizdev-stock-metric.netlify.app/',
-  source: 'https://github.com/Lizdev-05/stock-market.git',
 },
 
 {
