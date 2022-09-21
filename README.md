@@ -12,7 +12,7 @@ Javascript
 No framework was used.
 
 # Live Demo
-•  [Live Demo Link](https://lizdev-05.github.io/Portfolio/)
+•  [Live Demo Link](https://lizdevs-portfolio.netlify.app/)
 
 # Prerequisites
 • A modern browser e.g [Google Chrome](https://www.googlechrome.com)
