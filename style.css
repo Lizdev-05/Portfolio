@@ -595,7 +595,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   padding: 1em;
-  margin: 0.5em 0;
+  margin: 5rem 0;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 1em;
@@ -782,6 +782,7 @@ footer {
 
   .card-containers {
     max-width: 1600px;
+    width: 80%;
   }
 
   .about-me-bg {
@@ -1169,7 +1170,7 @@ footer {
   }
 
   .modal {
-    margin-top: 3px;
+    margin-top: 5rem;
     padding: 5px;
     width: 95%;
     text-align: center;
