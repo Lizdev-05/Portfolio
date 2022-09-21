@@ -5,6 +5,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .global.fixed {
   overflow: hidden;
 }
@@ -129,7 +133,7 @@ section {
   color: #172b4d;
   margin: 1.2 auto;
   margin-bottom: 1.3em;
-  padding: 0.3em;
+  padding: 1rem;
 }
 
 .indicator {
@@ -140,33 +144,42 @@ section {
 }
 
 .card-containers {
-  width: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .card-container {
-  display: flex;
-  align-items: flex-end;
-  height: 474px;
-  width: 90%;
-  border-radius: 0.5em;
-  background-color: #d0d9d4;
   border: 1px solid grey;
-  margin: 1.2em 0;
-  margin-left: 1em;
+  display: flex;
 }
 
 .card {
-  bottom: 0;
-  height: 235px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #36b37e;
+  height: 100%;
   border-radius: 0.5em;
   padding: 1.2em 0.7em 0 0.7em;
   border-color: #3a4a42;
   background-color: #fff;
 }
 
+.card > *{
+  flex: 1;
+}
+.card > img{
+  width: 100%;
+  
+}
+
 .card-content {
   margin: 0.8em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tags {
@@ -752,15 +765,10 @@ footer {
     text-align: center;
   }
 
-  .recent-work {
-    width: 750px;
-  }
 
   .card-container {
     display: flex;
     align-items: flex-end;
-    height: 474px;
-    width: 96%;
     border-radius: 8px;
     background-color: #d0d9d4;
     border: 1px solid grey;
@@ -773,9 +781,7 @@ footer {
   }
 
   .card-containers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
+    max-width: 1600px;
   }
 
   .about-me-bg {
@@ -1113,13 +1119,11 @@ footer {
 
   @keyframes slidein {
     0% {
-      margin-left: 100%;
-      width: 300%;
+      transform: translateX(100%);
     }
 
     100% {
-      margin-left: 0%;
-      width: 100%;
+      transform: translateX(0);
     }
   }
 }

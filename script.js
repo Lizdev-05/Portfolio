@@ -48,13 +48,13 @@ const CardArray = [{
   title: 'The Awesome Real Estate',
   languageTags: ['React Js', 'Javascript', 'Css', 'Linters', 'GitFlow'],
   description: 'The Awesome estate web application displays a list of apartments that were provided by local data. The users can check out the featured and recent apartments. Also, the user can click the house to get the details of the selected house.',
-  modalCardImage: './images/awesome-books.png',
+  modalCardImage: 'images/awesome-books.png',
   live: 'https://lizdev-awesome-estate.netlify.app/',
   source: 'https://github.com/Lizdev-05/awesome-estate.git',
 },
 
 {
-  title: ' Keeping track of components',
+  title: ' S&L Sensation',
   languageTags: ['API', 'Css', 'Javascript', 'Html'],
   description: 'The Meal DB web application displays a list of meals that were provided by an external API. The users can like a meal, leave some comments or make a reservation, in these cases an involvement API was used.',
   modalCardImage: './images/meal-screnshot.png',
@@ -63,7 +63,7 @@ const CardArray = [{
 },
 
 {
-  title: 'Multi-Post Stories Gain+Glory',
+  title: 'Realtime Stock Metric',
   languageTags: ['React Js', 'Redux', 'Css', 'Javascript', 'API'],
   description: 'Stock metrics is a web(mobile-focused) app for checking the companies listed on the stock exchange and see their live metrics. Its data is consumed from the Financial modelling API',
   modalCardImage: './images/detail-snapshot.png',
@@ -72,7 +72,7 @@ const CardArray = [{
 },
 
 {
-  title: ' Keeping track of components',
+  title: ' The Lizdev Bookstore',
   languageTags: ['Gitflow', 'Css', 'Javascript', 'Html'],
   description: 'The Bookstore is a website where the user can display a list of books, add a book by providing a title, an author, and selecting from the categories, and remove a selected book.',
   modalCardImage: './images/bookstore.PNG',
@@ -86,6 +86,8 @@ const cardCreation = (arr, i) => {
   cardContainer.className = 'card-container';
   const card = document.createElement('div');
   card.className = 'card';
+  const cardImg = document.createElement('img')
+  cardImg.setAttribute('src', arr[i].modalCardImage)
   const cardContent = document.createElement('div');
   cardContent.className = 'card-content';
   const btn = document.createElement('div');
@@ -103,8 +105,8 @@ const cardCreation = (arr, i) => {
   //  Appending divs to the parent element
   portfolioSection.appendChild(cardContainer);
   cardContainer.appendChild(card);
-  card.appendChild(cardContent);
   cardContent.append(cardTitle, tags, btn);
+  card.append(cardImg, cardContent);
   btn.appendChild(btnLink);
   const tagsCount = [0, 1, 2, 3];
   tagsCount.forEach((x) => {
