@@ -53,12 +53,12 @@ const CardArray = [{
     source: 'https://github.com/Lizdev-05/stock-market.git',
   },
   {
-  title: 'The Todos List',
+  title: 'The Recipe Web App',
   languageTags: ['React', 'Javascript', 'Css', 'Linters'],
-  description: 'Todo List Web app. This React app allows users to manage and organize their work and tasks effectively. The users can delete, update, and add new assignments to enhance task management.',
-  modalCardImage: './images/todo2.webp',
-  live: 'https://lizdev-todo-lists.netlify.app/',
-  source: 'https://github.com/Lizdev-05/react-to-do-lists.git',
+  description: 'This is a Ruby on Rails app that allows user to create, delete, and read recipes created by them or the community, allowing the users to decide whether they should be public or not. Also, it allows users to create food records and generate a shopping list based on the missing food for their recipes.',
+  modalCardImage: './images/recipe1.webp',
+  live: 'https://tranquil-crag-64773.herokuapp.com/',
+  source: 'https://github.com/Lizdev-05/Recipe-app',
 },
 
 {
@@ -71,12 +71,12 @@ const CardArray = [{
 },
 
 {
-  title: ' The Lizdev Bookstore',
-  languageTags: ['Gitflow', 'Css', 'Javascript', 'Html'],
-  description: 'The Bookstore is a website where the user can display a list of books, add a book by providing a title, an author, and selecting from the categories, and remove a selected book.',
-  modalCardImage: './images/bookstore2.webp',
-  live: 'https://lizdev-book-store.netlify.app/',
-  source: 'https://github.com/Lizdev-05/book-store.git',
+  title: ' The Prudent Mobile App',
+  languageTags: ['Gitflow', 'Css', 'Ruby on Rails', 'Ruby'],
+  description: 'Prudent app is a Ruby on Rails mobile web application that allows users to keep track of their expenses and categories. have a list of transactions associated with a category, so that the user can see how much money they spent and on what.',
+  modalCardImage: './images/prudent.webp',
+  live: 'https://prudent-app.onrender.com/',
+  source: 'https://github.com/Lizdev-05/Budget-app',
 },
 ];
 // Creating divs and classses for card
