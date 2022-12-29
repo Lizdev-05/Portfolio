@@ -9,6 +9,12 @@ html{
   scroll-behavior: smooth;
 }
 
+/* The documents overflows the body, this will resolve it. */
+
+body {
+  overflow-x: hidden;
+}
+
 .global.fixed {
   overflow: hidden;
 }
@@ -1229,5 +1235,17 @@ footer {
   .nav-bar .desktop-nav li a {
     font-size: 32px;
     font-weight: 600;
+  }
+}
+
+
+/* Centering the project section */
+
+@media (max-width: 435px) {
+  .card-containers {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 }
